@@ -1,15 +1,7 @@
 # Portfolio
 # 💫 About Me:
 
-I'm Sanny Prajapati, a 2nd-year B.Tech student with a passion for cybersecurity. My knowledge in Ethical Hacking and Cyber Security enable me to apply theory to practical scenarios like code cracking and ethical hacking. I'm committed to staying abreast of the evolving cybersecurity landscape and finding real-world solutions.
-As a Learner Student, I bridge academia and the professional realm, seeking collaborations and opportunities to inspire innovation in digital security.
-Highly skilled and detail-oriented cybersecurity and digital forensics expert with extensive experience in protecting critical
-systems and investigating cyber incidents. Proven ability to develop and implement robust security strategies, conduct
-in-depth forensic investigations, and recover digital evidence for legal proceedings. Expertise in malware analysis, incident
-response, vulnerability assessment, and network security, combined with a deep understanding of compliance frameworks
-and digital privacy laws. Strong communicator and collaborator, adept at working with cross-functional teams to mitigate
-risks and ensure data integrity. Profcient in using industry-leading tools for forensics, incident detection, and network security 
-
+I'm Sanny Prajapati, a Cyber Security and Digital Forensic Expert with a strong passion for ethical hacking and digital investigation. I have contributed to cybercrime investigations with the Mumbai Cyber Police and assisted the Income Tax Department during raids as a Cyber Security and Digital Forensics expert, applying advanced analysis, evidence extraction, and vulnerability assessment in real scenarios. I remain committed to staying updated with evolving cyber threats and delivering effective, practical security solutions.
             
 
 ## 🌐 Socials:
