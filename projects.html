@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="Sanny Prajapati" />
+    <meta name="description"
+        content="Sanny Prajapati's core projects. Explore high-quality Full Stack web applications, E-commerce, OSINT analyzers, and more." />
+
+    <!-- Geotags & Canonical -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Mumbai" />
+    <meta name="geo.position" content="19.0760;72.8777" />
+    <meta name="ICBM" content="19.0760, 72.8777" />
+    <link rel="canonical" href="https://darkuser21.netlify.app/projects.html" />
+
+    <title>Core Projects | Sanny Prajapati Cyber</title>
+    <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+    <style>
+        .projects-page-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease, border 0.3s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+            border: 1px solid rgba(0, 195, 255, 0.5);
+        }
+
+        .project-video-container {
+            width: 100%;
+            background: #000;
+            position: relative;
+        }
+
+        .project-video {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-info {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #00c3ff;
+            letter-spacing: 1px;
+        }
+
+        .project-desc {
+            font-family: 'Fira Code', monospace;
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-cta {
+            margin-top: 10px;
+            display: inline-block;
+            align-self: flex-start;
+            padding: 10px 25px;
+            color: #000;
+            background: #00c3ff;
+            text-decoration: none;
+            font-family: 'Fira Code', monospace;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .project-cta:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Video Placeholder style */
+        .video-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            color: #555;
+            font-family: 'Fira Code', monospace;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 900px) {
+            .project-card {
+                flex-direction: row;
+                height: 350px;
+            }
+
+            .project-video-container {
+                width: 50%;
+                border-bottom: none;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .project-video {
+                height: 100%;
+            }
+
+            .video-placeholder {
+                height: 100%;
+            }
+
+            .project-info {
+                width: 50%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div id="preloader"></div>
+    <noscript>Allow Javascript</noscript>
+
+    <header>
+        <div class="cursor-inner" id="cursor-inner"></div>
+        <div class="cursor-outer" id="cursor-outer"></div>
+        <div class="navbar" id="navbar">
+            <div class="logo" tabindex="0" aria-label="Sanny Prajapati logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <div class="logo-top">
+                        <img src="src/png/nav-avatar.png" alt="Sanny Prajapati Cyber" id="nav-avatar" />
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-tabs" id="navbar-tabs">
+                <ul class="navbar-tabs-ul">
+                    <li class="home" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+                        <a href="index.html" tabindex="0" aria-label="Home menu button">
+                            &#60;/Go Back&#62;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-page-container">
+            <div class="section-heading" data-aos="fade-up">
+                <h2 class="section-heading-article" tabindex="0" aria-label="Core Projects">
+                    &#60;Core Projects /&#62;
+                </h2>
+                <p class="sectionHeadingP" style="width: 200px;"></p>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- 1. AuraCheck -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/auracheck.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AuraCheck</h3>
+                        <p class="project-desc">Daily Gen Z Challenges. Take on daily quizzes, build insane streaks,
+                            climb the leaderboard, and flex your brain power.</p>
+                        <a href="https://aura-check-tau.vercel.app/" target="_blank" class="project-cta">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- 2. CivicBridge -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/civicbridge.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CivicBridge</h3>
+                        <p class="project-desc">Public Grievance Platform. Bridge the gap between citizens and leaders.
+                            Report issues, track progress, and engage in real-time.</p>
+                        <a href="https://civicbridge-topaz.vercel.app/" target="_blank" class="project-cta">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- 3. Iron Forge Fitness -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/ironforge.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Iron Forge Fitness</h3>
+                        <p class="project-desc">Elite Gym & Personal Training. Join the most results-driven gym in your
+                            city and forge your ultimate form.</p>
+                        <a href="https://gym-phi-indol.vercel.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 4. BlastForge Industries -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/blastforge.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BlastForge Industries</h3>
+                        <p class="project-desc">Industrial Blasting & Explosive Solutions for mining, quarrying,
+                            construction, and demolition operations.</p>
+                        <a href="https://blastforge.netlify.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 5. MACROS -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/macros.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">MACROS</h3>
+                        <p class="project-desc">Interactive 3D Portfolio showcasing high-performance web graphics and
+                            rendering capabilities.</p>
+                        <a href="https://macros-website.netlify.app/" target="_blank" class="project-cta">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- 6. Free Spirit -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/freespirit.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Free Spirit E-Commerce</h3>
+                        <p class="project-desc">Modern minimalist luxury e-commerce platform for curated fine jewelry
+                            and bespoke accessories.</p>
+                        <a href="https://freeespirit.netlify.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 7. St. Anne's Universe Kids -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/stanne.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">St. Anne's Universe Kids</h3>
+                        <p class="project-desc">Interactive school portal for holistic early childhood development,
+                            promoting a playful journey of discovery.</p>
+                        <a href="https://stanne.netlify.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 8. K to K World -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/ktok.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">K to K World</h3>
+                        <p class="project-desc">Travel & Tourism platform offering crafted global journeys with
+                            precision, luxury, and automated scheduling.</p>
+                        <a href="https://ktokworld.com/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 9. MJ DRESSWALA -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/mjdresswala.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">MJ DRESSWALA</h3>
+                        <p class="project-desc">A premium costume store and rental platform featuring over 5,000 outfits
+                            and robust e-commerce logic.</p>
+                        <a href="https://mjdresswala.netlify.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 10. Instagram OSINT Analyzer -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/instaosint.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Insta OSINT Analyzer</h3>
+                        <p class="project-desc">Advanced intelligence platform. AI-powered insights, profile data
+                            extraction, and engagement analysis for public profiles.</p>
+                        <a href="https://instaosint.vercel.app/" target="_blank" class="project-cta">View Project</a>
+                    </div>
+                </div>
+
+                <!-- 11. Sasta ChatGPT -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-video-container">
+            <img class="project-video" src="src/videos/sastachatgpt.webp" alt="Video Preview">
+          </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sasta ChatGPT AI</h3>
+                        <p class="project-desc">An AI chat assistant powered by Streamlit, offering optimized language
+                            modeling capabilities and instant interaction.</p>
+                        <a href="https://sastachatgpt.streamlit.app/" target="_blank" class="project-cta">View
+                            Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const cursorInner = document.getElementById("cursor-inner");
+        const cursorOuter = document.getElementById("cursor-outer");
+        const links = document.querySelectorAll("a,label,button,.project-card");
+
+        document.addEventListener("mousemove", function (e) {
+            if (!cursorInner || !cursorOuter) return;
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursorInner.style.left = `${posX}px`;
+            cursorInner.style.top = `${posY}px`;
+            cursorOuter.animate(
+                { left: `${posX}px`, top: `${posY}px` },
+                { duration: 500, fill: "forwards" }
+            );
+            links.forEach((link) => {
+                link.addEventListener("mouseenter", () => {
+                    cursorInner.classList.add("hover");
+                    cursorOuter.classList.add("hover");
+                });
+                link.addEventListener("mouseleave", () => {
+                    cursorInner.classList.remove("hover");
+                    cursorOuter.classList.remove("hover");
+                });
+            });
+        });
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("preloader");
+            if (loader) loader.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
