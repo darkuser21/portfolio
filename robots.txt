@@ -1,4 +1,22 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://darkuser21.netlify.app/sitemap.xml
+# AI Agent Specific Directives
+User-agent: OpenAI
+Allow: /
+User-agent: OpenAI-GPT
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+Sitemap: https://darkuser.tech/sitemap.xml

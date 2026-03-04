@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://darkuser.tech/</loc>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/Preview-card-min.png</image:loc>
+            <image:title>Sanny Prajapati Portfolio Preview</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/webp/sanny.webp</image:loc>
+            <image:title>Sanny Prajapati</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://darkuser.tech/gallery.html</loc>
+        <image:image>
+            <image:loc>https://darkuser.tech/web%20pics/-6327640193690701549_121.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/web%20pics/-6327640193690701558_121.jpg</image:loc>
+        </image:image>
+    </url>
+</urlset>

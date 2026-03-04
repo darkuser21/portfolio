@@ -30,9 +30,21 @@ function visualmode() {
 
 // Preloader & Initial Animations
 window.addEventListener("load", () => {
+    const isFirstLoad = !sessionStorage.getItem("siteLoaded");
+
     if (loader) {
-        loader.style.display = "none";
+        if (isFirstLoad) {
+            // Keep loader visible for a moment for effect then hide
+            setTimeout(() => {
+                loader.style.display = "none";
+                sessionStorage.setItem("siteLoaded", "true");
+            }, 1000);
+        } else {
+            // Instant hide for subsequent loads
+            loader.style.display = "none";
+        }
     }
+
     const heyPopup = document.querySelector(".hey");
     if (heyPopup) {
         heyPopup.classList.add("popup");
@@ -95,9 +107,9 @@ const mybutton = document.getElementById("backtotopbutton");
 
 function scrollFunction() {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        if(mybutton) mybutton.style.display = "block";
+        if (mybutton) mybutton.style.display = "block";
     } else {
-        if(mybutton) mybutton.style.display = "none";
+        if (mybutton) mybutton.style.display = "none";
     }
 }
 
