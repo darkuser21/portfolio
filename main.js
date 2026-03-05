@@ -34,13 +34,16 @@ window.addEventListener("load", () => {
 
     if (loader) {
         if (isFirstLoad) {
-            // Keep loader visible for a moment for effect then hide
+            // Show the cyber phonk loader for 2.5s then fade out
             setTimeout(() => {
-                loader.style.display = "none";
+                loader.classList.add("fade-out");
                 sessionStorage.setItem("siteLoaded", "true");
-            }, 1000);
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 800);
+            }, 2500);
         } else {
-            // Instant hide for subsequent loads
+            // Instant hide for subsequent loads in the same session
             loader.style.display = "none";
         }
     }
