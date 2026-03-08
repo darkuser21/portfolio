@@ -112,6 +112,12 @@
   
 
 
+    
+    
+
+  
+
+
     <!-- Advanced SEO & Structured Data -->
     <title>Compliance & ISMS Audit | Sanny Prajapati</title>
     <meta name="description" content="ISO 27001, GDPR, and ISMS compliance auditing to ensure your organization meets all regulatory cybersecurity requirements." />
@@ -343,6 +349,7 @@
     
     
     
+    
       <section class="service-detail-container" data-aos="fade-up">
         <a href="services.html" class="back-btn">&#8592; Back to Services</a>
 
@@ -350,6 +357,8 @@
         <div class="tilt-box" data-aos="zoom-in" data-aos-duration="1000">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Compliance & ISMS Audit" style="width: 100%; height: 350px; object-fit: cover; display: block; filter: brightness(0.8) contrast(1.2);">
         </div>
+        
+        
         
         
         
@@ -426,6 +435,7 @@
     <script>
       AOS.init();
     </script>
+  
   
   
   
@@ -556,7 +566,7 @@
         };
         
         try {
-          const res = await fetch("http://localhost:3000/send-inquiry", {
+          const res = await fetch("/.netlify/functions/send-inquiry", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
@@ -576,7 +586,7 @@
           }
         } catch (err) {
           status.style.color = "#ff512f";
-          status.innerText = "Fatal Error: Ensure the Node.js backend is running on port 3000.";
+          status.innerText = "Fatal Error: Comm Link Offline or Server Unavailable.";
         }
         
         submitBtn.disabled = false;

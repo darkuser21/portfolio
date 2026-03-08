@@ -317,7 +317,7 @@ modal_html = """
         };
         
         try {
-          const res = await fetch("http://localhost:3000/send-inquiry", {
+          const res = await fetch("/.netlify/functions/send-inquiry", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
@@ -337,7 +337,7 @@ modal_html = """
           }
         } catch (err) {
           status.style.color = "#ff512f";
-          status.innerText = "Fatal Error: Ensure the Node.js backend is running on port 3000.";
+          status.innerText = "Fatal Error: Comm Link Offline or Server Unavailable.";
         }
         
         submitBtn.disabled = false;
