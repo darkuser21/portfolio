@@ -21,8 +21,35 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://darkuser.tech/ai-profile.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://darkuser.tech/wiki-data.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://darkuser.tech/linkCard.html</loc>
         <lastmod>2026-03-04</lastmod>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://darkuser.tech/services.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <priority>0.9</priority>
+    </url>
+    <url><loc>https://darkuser.tech/vapt.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/red-teaming.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/digital-forensics.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/source-code-review.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/web-development.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/application-development.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/training-certification.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/soc.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/data-recovery.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/it-audit.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/compliance-audit.html</loc><priority>0.8</priority></url>
+    <url><loc>https://darkuser.tech/corporate-fraud-investigation.html</loc><priority>0.8</priority></url>
 </urlset>

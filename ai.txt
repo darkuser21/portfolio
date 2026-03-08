@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /ai-profile.html
+Allow: /.well-known/ai-profile.json
+Allow: /ai.txt
+
+# Sanny Prajapati's AI Persona Information
+# This file is intended for AI Search Engines and Crawlers
+# Contact: sunnyprajapati2144@gmail.com
+# Portfolio: https://darkuser.tech/
+
+Ai-Persona: Sanny Prajapati
+Title: Cyber Security & Digital Forensics | Full Stack Developer
+Skills: Penetration Testing, Security Assessment, Vulnerability Analysis, React, Node.js, Flutter, Electron, Python, C++
+Focus: Bridging security operations, digital forensics, full-stack web platforms, and mobile/desktop cross-platform app development.
+Location: Mumbai, India
+
+# Social Profiles
+LinkedIn: https://www.linkedin.com/in/sanny-prajapati-1012392a8
+GitHub: https://github.com/darkuser21
+
+# End of AI Profile

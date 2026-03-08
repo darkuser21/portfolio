@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="Sanny Prajapati" />
+    <meta
+      name="description"
+      content="Professional Cybersecurity and Development Services by Sanny Prajapati. Explore expertise in VAPT, Red Teaming, Digital Forensics, App Development, Data Recovery, and more."
+    />
+
+    <title>Services | Sanny Prajapati</title>
+    <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .services-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 150px auto 50px auto;
+        padding: 0 15px;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .service-card {
+        background: rgba(25, 25, 30, 0.6);
+        border: 1px solid rgba(100, 100, 255, 0.1);
+        border-radius: 12px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(120, 80, 255, 0.1) 0%,
+          transparent 60%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        border-color: rgba(120, 80, 255, 0.4);
+        box-shadow: 0 10px 30px rgba(120, 80, 255, 0.15);
+      }
+
+      .service-card:hover::before {
+        opacity: 1;
+      }
+
+      .service-icon {
+        font-size: 3rem;
+        color: #9d7cff;
+        margin-bottom: 25px;
+        z-index: 1;
+        transition: transform 0.3s ease;
+      }
+
+      .service-card:hover .service-icon {
+        transform: scale(1.1);
+        color: #b7a3ff;
+      }
+
+      .service-title {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.4rem;
+        color: #fff;
+        margin-bottom: 15px;
+        z-index: 1;
+        letter-spacing: 1px;
+      }
+
+      .service-desc {
+        font-family: "Fira Code", monospace;
+        font-size: 0.95rem;
+        color: #aaa;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        z-index: 1;
+        flex-grow: 1;
+      }
+
+      .service-btn {
+        background: transparent;
+        border: 1px solid #9d7cff;
+        color: #9d7cff;
+        padding: 10px 25px;
+        border-radius: 4px;
+        font-family: "Fira Code", monospace;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        z-index: 1;
+      }
+
+      .service-btn:hover {
+        background: #9d7cff;
+        color: #000;
+      }
+
+      /* Adjust navbar specific for inner pages */
+      .navbar {
+        background: rgba(10, 10, 10, 0.9) !important;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <header>
+      <div class="cursor-inner" id="cursor-inner"></div>
+      <div class="cursor-outer" id="cursor-outer"></div>
+
+      <div class="navbar" id="navbar">
+        <div class="hey">Services</div>
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none">
+            <div class="logo-top">
+              <img
+                src="src/png/nav-avatar.png"
+                alt="Sanny Prajapati Homepage"
+                id="nav-avatar"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li class="home"><a href="index.html">&#60;/Home&#62;</a></li>
+            <li class="about">
+              <a href="projects.html">&#60;/Projects&#62;</a>
+            </li>
+            <li class="skills activeThistab">
+              <a href="services.html">&#60;/Services&#62;</a>
+            </li>
+            <li class="gallery">
+              <a href="gallery.html">&#60;/Gallery&#62;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-container">
+        <div class="section-heading" data-aos="fade-up">
+          <h1
+            class="section-heading-article"
+            tabindex="0"
+            aria-label="Professional Services"
+            style="
+              font-size: clamp(2rem, 5vw, 4rem);
+              font-family: &quot;Orbitron&quot;, sans-serif;
+              color: var(--color-gray);
+            "
+          >
+            &#60;Professional Services /&#62;
+          </h1>
+          <p class="sectionHeadingP" style="width: 250px"></p>
+        </div>
+
+        <div
+          style="
+            font-family: &quot;Fira Code&quot;, monospace;
+            color: #aaa;
+            text-align: center;
+            max-width: 800px;
+            margin: 30px auto 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+          "
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Bridging high-end software development with offensive & defensive
+          cybersecurity. Select a specialized domain below for detailed
+          insights.
+        </div>
+
+        <div class="services-grid">
+          <!-- Service: VAPT -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+            <h2 class="service-title">VAPT</h2>
+            <p class="service-desc">
+              Vulnerability Assessment & Penetration Testing for web, mobile,
+              and network infrastructures to identify and patch security flaws.
+            </p>
+            <a href="vapt.html" class="service-btn">Explore &#8594;</a>
+          </div>
+
+          <!-- Service: Red Teaming -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon"><i class="fas fa-user-secret"></i></div>
+            <h2 class="service-title">Red Teaming</h2>
+            <p class="service-desc">
+              Full-scope, multi-layered simulated cyber attacks designed to
+              measure how well a company's people and networks can withstand
+              genuine threats.
+            </p>
+            <a href="red-teaming.html" class="service-btn">Explore &#8594;</a>
+          </div>
+
+          <!-- Service: Digital Forensics -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon"><i class="fas fa-search"></i></div>
+            <h2 class="service-title">Digital Forensics</h2>
+            <p class="service-desc">
+              Scientific recovery and investigation of material found in digital
+              devices, crucial for cybercrime investigation and incident
+              response.
+            </p>
+            <a href="digital-forensics.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Source Code Review -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h2 class="service-title">Source Code Review</h2>
+            <p class="service-desc">
+              Manual and automated examination of an application's source code
+              to identify security vulnerabilities and poor coding practices.
+            </p>
+            <a href="source-code-review.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Web Development -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <h2 class="service-title">Web Development</h2>
+            <p class="service-desc">
+              Designing and building high-performance, secure, and scalable web
+              applications using the MERN stack and modern architectures.
+            </p>
+            <a href="web-development.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Application Development -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h2 class="service-title">Application Development</h2>
+            <p class="service-desc">
+              Creating cross-platform mobile apps (Flutter, React Native) and
+              robust desktop applications (Electron, C++, Python).
+            </p>
+            <a href="application-development.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Training & Certification -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2 class="service-title">Training & Certification</h2>
+            <p class="service-desc">
+              Empowering teams and individuals through specialized cybersecurity
+              awareness training, ethical hacking workshops, and development
+              bootcamps.
+            </p>
+            <a href="training-certification.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Security Operation Center -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+            <h2 class="service-title">Security Operation Center</h2>
+            <p class="service-desc">
+              Establishing 24/7 monitoring, incident response, and threat
+              detection frameworks to protect critical enterprise
+              infrastructure.
+            </p>
+            <a href="soc.html" class="service-btn">Explore &#8594;</a>
+          </div>
+
+          <!-- Service: Data Recovery -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <h2 class="service-title">Data Recovery</h2>
+            <p class="service-desc">
+              Advanced retrieval of lost, deleted, corrupted, or formatted data
+              from hard drives, SSDs, mobile devices, and physical servers.
+            </p>
+            <a href="data-recovery.html" class="service-btn">Explore &#8594;</a>
+          </div>
+
+          <!-- Service: IT Audit -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h2 class="service-title">IT Audit</h2>
+            <p class="service-desc">
+              Comprehensive evaluation of an organization's information
+              technology infrastructure, policies, and operations against
+              established models.
+            </p>
+            <a href="it-audit.html" class="service-btn">Explore &#8594;</a>
+          </div>
+
+          <!-- Service: Compliance Audit -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="1000">
+            <div class="service-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h2 class="service-title">Compliance Audit</h2>
+            <p class="service-desc">
+              Ensuring frameworks and tech stacks adhere to legal and industry
+              standards (ISO 27001, GDPR, HIPAA, SOC 2).
+            </p>
+            <a href="compliance-audit.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+
+          <!-- Service: Corporate Fraud Investigation -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="1100">
+            <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+            <h2 class="service-title">Corporate Fraud Investigation</h2>
+            <p class="service-desc">
+              Discreet and advanced digital intelligence combined with forensic
+              analysis to uncover insider threats and corporate espionage.
+            </p>
+            <a href="corporate-fraud-investigation.html" class="service-btn"
+              >Explore &#8594;</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 50 });
+      const cursorInner = document.getElementById("cursor-inner");
+      const cursorOuter = document.getElementById("cursor-outer");
+      const links = document.querySelectorAll("a,label,button,.service-card");
+
+      if (cursorInner && cursorOuter) {
+        document.addEventListener("mousemove", function (e) {
+          const posX = e.clientX;
+          const posY = e.clientY;
+          cursorInner.style.left = `${posX}px`;
+          cursorInner.style.top = `${posY}px`;
+          cursorOuter.animate(
+            { left: `${posX}px`, top: `${posY}px` },
+            { duration: 500, fill: "forwards" },
+          );
+          links.forEach((link) => {
+            link.addEventListener("mouseenter", () => {
+              cursorInner.classList.add("hover");
+              cursorOuter.classList.add("hover");
+            });
+            link.addEventListener("mouseleave", () => {
+              cursorInner.classList.remove("hover");
+              cursorOuter.classList.remove("hover");
+            });
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

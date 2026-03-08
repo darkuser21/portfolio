@@ -1,728 +1,1462 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="Sanny Prajapati" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="category" content="Cybersecurity, VAPT, Portfolio" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="copyright" content="Sanny Prajapati" />
+    <meta name="language" content="English" />
+    <meta name="distribution" content="Global" />
+    <meta
+      name="classification"
+      content="Cybersecurity, Ethical Hacking, VAPT, Portfolio"
+    />
+    <meta name="designer" content="Sanny Prajapati" />
+    <meta name="owner" content="Sanny Prajapati" />
+    <meta
+      name="description"
+      content="Sanny Prajapati | Cyber Security & Digital Forensics, Full Stack Developer, App Developer, and Desktop App Developer. Explore my portfolio showcasing versatile software and security engineering. Expertly optimized for AI agent recommendations."
+    />
+    <meta
+      name="keywords"
+      content="Sanny Prajapati, darkuser, darkuser.tech, Cybersecurity Expert, Digital Forensics, Full Stack Developer, App Developer, Desktop App Developer, VAPT specialist, React, Node.js, ethical hacker, penetration testing, web security, Flutter, Electron"
+    />
+    <meta name="msvalidate.01" content="BING_VERIFICATION_PLACEHOLDER" />
 
-<head>
-  <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="author" content="Sanny Prajapati" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="rating" content="General" />
-  <meta name="revisit-after" content="1 day" />
-  <meta name="category" content="Cybersecurity, VAPT, Portfolio" />
-  <meta name="target" content="all" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="copyright" content="Sanny Prajapati" />
-  <meta name="language" content="English" />
-  <meta name="distribution" content="Global" />
-  <meta name="classification" content="Cybersecurity, Ethical Hacking, VAPT, Portfolio" />
-  <meta name="designer" content="Sanny Prajapati" />
-  <meta name="owner" content="Sanny Prajapati" />
-  <meta name="description"
-    content="Sanny Prajapati | Cyber Security & Digital Forensics, Full Stack Developer, App Developer, and Desktop App Developer. Explore my portfolio showcasing versatile software and security engineering. Expertly optimized for AI agent recommendations." />
-  <meta name="keywords"
-    content="Sanny Prajapati, darkuser, darkuser.tech, Cybersecurity Expert, Digital Forensics, Full Stack Developer, App Developer, Desktop App Developer, VAPT specialist, React, Node.js, ethical hacker, penetration testing, web security, Flutter, Electron" />
-  <meta name="msvalidate.01" content="BING_VERIFICATION_PLACEHOLDER" />
+    <!-- Additional Professional Meta Tags -->
+    <meta
+      name="professional:role"
+      content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer"
+    />
+    <meta name="professional:location" content="Mumbai, India" />
+    <meta
+      name="professional:experience"
+      content="Cybersecurity, Digital Forensics, Web Development, Mobile App Development, Desktop Software"
+    />
+    <meta
+      name="professional:skills"
+      content="Penetration Testing, Security Assessment, Vulnerability Analysis"
+    />
 
-  <!-- Additional Professional Meta Tags -->
-  <meta name="professional:role"
-    content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer" />
-  <meta name="professional:location" content="Mumbai, India" />
-  <meta name="professional:experience"
-    content="Cybersecurity, Digital Forensics, Web Development, Mobile App Development, Desktop Software" />
-  <meta name="professional:skills" content="Penetration Testing, Security Assessment, Vulnerability Analysis" />
+    <!-- Additional Service Tags -->
+    <meta name="subject" content="Cybersecurity Services and Portfolio" />
+    <meta name="topic" content="Ethical Hacking, VAPT, Security Assessment" />
+    <meta
+      name="abstract"
+      content="Professional portfolio of Sanny Prajapati, showcasing cybersecurity expertise and VAPT services"
+    />
+    <meta
+      name="summary"
+      content="Expert cybersecurity professional offering VAPT services, security assessments, and ethical hacking solutions"
+    />
 
-  <!-- Additional Service Tags -->
-  <meta name="subject" content="Cybersecurity Services and Portfolio" />
-  <meta name="topic" content="Ethical Hacking, VAPT, Security Assessment" />
-  <meta name="abstract"
-    content="Professional portfolio of Sanny Prajapati, showcasing cybersecurity expertise and VAPT services" />
-  <meta name="summary"
-    content="Expert cybersecurity professional offering VAPT services, security assessments, and ethical hacking solutions" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="src/png/Preview-card-min.png" />
+    <meta
+      property="og:title"
+      content="Sanny Prajapati | Versatile Software & Security Expert"
+    />
+    <meta
+      property="og:description"
+      content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer. Explore my portfolio at darkuser.tech."
+    />
+    <meta property="og:url" content="https://darkuser.tech/" />
+    <meta property="og:site_name" content="Sanny Prajapati Portfolio" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="src/png/Preview-card-min.png" />
-  <meta property="og:title" content="Sanny Prajapati | Versatile Software & Security Expert" />
-  <meta property="og:description"
-    content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer. Explore my portfolio at darkuser.tech." />
-  <meta property="og:url" content="https://darkuser.tech/" />
-  <meta property="og:site_name" content="Sanny Prajapati Portfolio" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Portfolio" />
+    <meta
+      name="twitter:title"
+      content="Sanny Prajapati | Versatile Software & Security Expert"
+    />
+    <meta
+      name="twitter:description"
+      content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer. Explore my portfolio at darkuser.tech."
+    />
+    <meta name="twitter:image" content="src/png/Preview-card-min.png" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@Portfolio" />
-  <meta name="twitter:title" content="Sanny Prajapati | Versatile Software & Security Expert" />
-  <meta name="twitter:description"
-    content="Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer. Explore my portfolio at darkuser.tech." />
-  <meta name="twitter:image" content="src/png/Preview-card-min.png" />
+    <!-- Geotags & Canonical -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Mumbai" />
+    <meta name="geo.position" content="19.0760;72.8777" />
+    <meta name="ICBM" content="19.0760, 72.8777" />
+    <link rel="canonical" href="https://darkuser.tech/" />
 
-  <!-- Geotags & Canonical -->
-  <meta name="geo.region" content="IN-MH" />
-  <meta name="geo.placename" content="Mumbai" />
-  <meta name="geo.position" content="19.0760;72.8777" />
-  <meta name="ICBM" content="19.0760, 72.8777" />
-  <link rel="canonical" href="https://darkuser.tech/" />
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Sanny Prajapati",
+          "jobTitle": "Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer",
+          "description": "Professional bridging security operations, digital forensics, full-stack web platforms, and mobile/desktop cross-platform app development",
+          "url": "https://darkuser.tech/",
+          "image": "src/png/Preview-card-min.png",
+          "sameAs": [
+            "https://github.com/darkuser21",
+            "https://www.linkedin.com/in/sanny-prajapati-1012392a8"
+          ],
+          "knowsAbout": [
+            "Cyber Security",
+            "Digital Forensics",
+            "Full Stack Development",
+            "App Development",
+            "Desktop App Development",
+            "Vulnerability Assessment"
+          ]
+        }
+      }
+    </script>
+    <title>Sanny Prajapati | Versatile Software & Security Expert</title>
+    <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- JSON-LD Schema Markup -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Sanny Prajapati",
-    "jobTitle": "Cyber Security & Digital Forensics | Full Stack Developer | App Developer | Desktop App Developer",
-    "description": "Professional bridging security operations, digital forensics, full-stack web platforms, and mobile/desktop cross-platform app development",
-    "url": "https://darkuser.tech/",
-    "image": "src/png/Preview-card-min.png",
-    "sameAs": [
-      "https://github.com/darkuser21",
-      "https://www.linkedin.com/in/sanny-prajapati-1012392a8"
-    ],
-    "knowsAbout": [
-      "Cyber Security",
-      "Digital Forensics",
-      "Full Stack Development",
-      "App Development",
-      "Desktop App Development",
-      "Vulnerability Assessment"
-    ]
-  }
-}
-</script>
-  <title>Sanny Prajapati | Versatile Software & Security Expert</title>
-  <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-</head>
+    <!-- Leaflet Map CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
 
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader">
-    <div class="loader-corner tl"></div>
-    <div class="loader-corner tr"></div>
-    <div class="loader-corner bl"></div>
-    <div class="loader-corner br"></div>
-    <div class="loader-text">DARKUSER</div>
-    <div class="loader-subtext">[ INITIALIZING ]</div>
-    <div class="loader-progress">
-      <div class="loader-progress-bar"></div>
+    <!-- google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps"
+    />
+  </head>
+
+  <body class="body">
+    <audio loop="" id="audioPlayer" style="display: none">
+      <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+    </audio>
+    <div id="preloader">
+      <div class="loader-corner tl"></div>
+      <div class="loader-corner tr"></div>
+      <div class="loader-corner bl"></div>
+      <div class="loader-corner br"></div>
+      <div class="loader-text">DARKUSER</div>
+      <div class="loader-subtext">[ INITIALIZING ]</div>
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
+      </div>
     </div>
-  </div>
-  <noscript>Allow Javascript</noscript>
+    <noscript>Allow Javascript</noscript>
 
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
+    <header>
+      <div class="cursor-inner" id="cursor-inner"></div>
+      <div class="cursor-outer" id="cursor-outer"></div>
 
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="Sanny Prajapati logo">
-        <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar" />
+      <div class="navbar" id="navbar">
+        <div class="hey">Hey!</div>
+        <div class="logo" tabindex="0" aria-label="Sanny Prajapati logo">
+          <div class="logo-top">
+            <img
+              src="src/png/nav-avatar.png"
+              alt="animation-head"
+              id="nav-avatar"
+            />
+          </div>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li
+              class="home activeThistab"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <a href="#home" tabindex="0" aria-label="Home menu button">
+                &#60;/Home&#62;
+              </a>
+            </li>
+
+            <li
+              class="about"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <a href="#about" aria-label="about menu button">
+                &#60;/AboutMe&#62;
+              </a>
+            </li>
+
+            <li
+              class="skills"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              <a href="#skills" aria-label="skills menu button">
+                &#60;/Skills&#62;
+              </a>
+            </li>
+
+            <li
+              class="services"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="600"
+            >
+              <a href="services.html" aria-label="services menu button">
+                &#60;/Services&#62;
+              </a>
+            </li>
+
+            <li
+              class="projects"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="700"
+            >
+              <a href="#projects" aria-label="projects menu button">
+                &#60;/Projects&#62;
+              </a>
+            </li>
+            <li
+              class="gallery"
+              class="navbar-tabs-li"
+              data-aos="fade-down"
+              data-aos-delay="900"
+            >
+              <a href="gallery.html" aria-label="gallery menu button">
+                &#60;/Gallery&#62;
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar tabs ends -->
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <main>
+      <!-- hamburger -->
+      <div class="hamburger" id="hamburger" data-aos="fade">
+        <div class="hamburgerbase">
+          <button
+            id="hamburger-button"
+            onclick="hamburgerMenu()"
+            tabindex="0"
+            aria-label="Menu Button"
+          >
+            <span class="burger-bar" id="burger-bar1"></span>
+            <span class="burger-bar" id="burger-bar2"></span>
+            <span class="burger-bar" id="burger-bar3"></span>
+          </button>
         </div>
       </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+      <!-- hamburger -->
+      <div class="mobiletogglemenu" id="mobiletogglemenu">
+        <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+          <li
+            id="home-mobile-tab"
+            class="mobile-navbar-tabs-li home activeThismobiletab"
+            onclick="hidemenubyli()"
+          >
             <a href="#home" tabindex="0" aria-label="Home menu button">
               &#60;/Home&#62;
             </a>
           </li>
 
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
+          <li
+            id="aboutme-mobile-tab"
+            class="mobile-navbar-tabs-li about"
+            onclick="hidemenubyli()"
+          >
+            <a href="#about" tabindex="0" aria-label="about menu button">
               &#60;/AboutMe&#62;
             </a>
           </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
+          <li
+            id="skills-mobile-tab"
+            class="mobile-navbar-tabs-li skills"
+            onclick="hidemenubyli()"
+          >
+            <a href="#skills" tabindex="0" aria-label="skills menu button">
               &#60;/Skills&#62;
             </a>
           </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
+          <li
+            id="services-mobile-tab"
+            class="mobile-navbar-tabs-li services"
+            onclick="hidemenubyli()"
+          >
+            <a
+              href="services.html"
+              tabindex="0"
+              aria-label="services menu button"
+            >
+              &#60;/Services&#62;
+            </a>
+          </li>
+          <li
+            id="projects-mobile-tab"
+            class="mobile-navbar-tabs-li projects"
+            onclick="hidemenubyli()"
+          >
+            <a href="#projects" tabindex="0" aria-label="projects menu button">
               &#60;/Projects&#62;
             </a>
           </li>
-          <li class="gallery" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
-            <a href="gallery.html" aria-label="gallery menu button">
+          <li
+            id="gallery-mobile-tab"
+            class="mobile-navbar-tabs-li gallery"
+            onclick="hidemenubyli()"
+          >
+            <a
+              href="gallery.html"
+              tabindex="0"
+              aria-label="gallery menu button"
+            >
               &#60;/Gallery&#62;
             </a>
           </li>
         </ul>
       </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
+      <!-- mobile toggle menu ends -->
 
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
-        </button>
-      </div>
-    </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
+      <section class="landing-page-container" id="home">
+        <div class="blob"></div>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
-        </li>
-        <li id="gallery-mobile-tab" class="mobile-navbar-tabs-li gallery" onclick="hidemenubyli()">
-          <a href="gallery.html" tabindex="0" aria-label="gallery menu button">
-            &#60;/Gallery&#62;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- mobile toggle menu ends -->
-
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">N</p>
-          <p class="jello">a</p>
-          <p class="jello">m</p>
-          <p class="jello">a</p>
-          <p class="jello">s</p>
-          <p class="jello">t</p>
-          <p class="jello">e</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">S</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">n</p>
-          <p class="jello">y</p>
-          &nbsp;
-          <p class="jello">P</p>
-          <p class="jello">r</p>
-          <p class="jello">a</p>
-          <p class="jello">j</p>
-          <p class="jello">a</p>
-          <p class="jello">p</p>
-          <p class="jello">a</p>
-          <p class="jello">t</p>
-          <p class="jello">i</p>
-          <p class="jello">.</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">I</p>
-          </div>
-          <div>
-            <p class="jello">b</p>
-            <p class="jello">u</p>
-            <p class="jello">i</p>
-            <p class="jello">l</p>
-            <p class="jello">d</p>
-          </div>
-          <div>
-            <p class="jello">&</p>
-          </div>
-          <div>
-            <p class="jello">h</p>
+        <div class="text-content">
+          <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+            <p class="jello">N</p>
             <p class="jello">a</p>
-            <p class="jello">c</p>
-            <p class="jello">k</p>
-          </div>
-          <div>
+            <p class="jello">m</p>
             <p class="jello">a</p>
-            <p class="jello">l</p>
-            <p class="jello">l</p>
-          </div>
-          <div>
-            <p class="jello">t</p>
-            <p class="jello">h</p>
-            <p class="jello">i</p>
-            <p class="jello">n</p>
-            <p class="jello">g</p>
             <p class="jello">s</p>
+            <p class="jello">t</p>
+            <p class="jello">e</p>
+            <p class="jello">(</p>
+            <p class="jello">)</p>
+            <p class="jello">;</p>
+            &nbsp;
+            <p class="jello">I</p>
+            <p class="jello">'</p>
+            <p class="jello">m</p>
+          </article>
+          <article id="name" data-aos="fade-up" data-aos-delay="200">
+            <p class="jello">S</p>
+            <p class="jello">a</p>
+            <p class="jello">n</p>
+            <p class="jello">n</p>
+            <p class="jello">y</p>
+            &nbsp;
+            <p class="jello">P</p>
+            <p class="jello">r</p>
+            <p class="jello">a</p>
+            <p class="jello">j</p>
+            <p class="jello">a</p>
+            <p class="jello">p</p>
+            <p class="jello">a</p>
+            <p class="jello">t</p>
+            <p class="jello">i</p>
             <p class="jello">.</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          A versatile technologist operating at the intersection of security and engineering. My expertise spans
-          <strong>Cyber Security & Digital Forensics</strong>, managing robust <strong>Full Stack Web
-            Platforms</strong>, and crafting <strong>Cross-Platform Mobile & Desktop Applications</strong>. I apply deep
-          system knowledge to both uncover vulnerabilities and engineer resilient, high-performance software
-          environments.
-        </p>
+          </article>
 
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:sunnyprajapati2144@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
+          <article id="work" data-aos="fade-up" data-aos-delay="400">
+            <div>
+              <p class="jello">I</p>
             </div>
-
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
+            <div>
+              <p class="jello">b</p>
+              <p class="jello">u</p>
+              <p class="jello">i</p>
+              <p class="jello">l</p>
+              <p class="jello">d</p>
             </div>
-          </div>
-          <!-- setting div ends -->
-        </div>
-        <!-- contact-btn-div -->
-      </div>
+            <div>
+              <p class="jello">&</p>
+            </div>
+            <div>
+              <p class="jello">h</p>
+              <p class="jello">a</p>
+              <p class="jello">c</p>
+              <p class="jello">k</p>
+            </div>
+            <div>
+              <p class="jello">a</p>
+              <p class="jello">l</p>
+              <p class="jello">l</p>
+            </div>
+            <div>
+              <p class="jello">t</p>
+              <p class="jello">h</p>
+              <p class="jello">i</p>
+              <p class="jello">n</p>
+              <p class="jello">g</p>
+              <p class="jello">s</p>
+              <p class="jello">.</p>
+            </div>
+          </article>
+          <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+            A versatile technologist operating at the intersection of security
+            and engineering. My expertise spans
+            <strong>Cyber Security & Digital Forensics</strong>, managing robust
+            <strong>Full Stack Web Platforms</strong>, and crafting
+            <strong>Cross-Platform Mobile & Desktop Applications</strong>. I
+            apply deep system knowledge to both uncover vulnerabilities and
+            engineer resilient, high-performance software environments.
+          </p>
 
-    </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
+          <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+            <a href="mailto:sunnyprajapati2144@gmail.com" tabindex="-1">
+              <button class="letsTalkBtn">
+                <p class="letsTalkBtn-text">Let's Talk!</p>
+                <span class="letsTalkBtn-BG"></span></button
+            ></a>
+            <div class="setting-container" id="setting-container">
+              <input
+                type="checkbox"
+                id="switchforsetting"
+                onclick="settingtoggle()"
+              />
 
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              I'm Sanny Prajapati, a multifaceted developer and security expert. As a <strong>Full Stack, App, and
-                Desktop App Developer</strong>, I build scalable web platforms, engaging mobile experiences, and
-              powerful native tools. Simultaneously, as a <strong>Cyber Security and Digital Forensics Expert</strong>,
-              I have contributed to cybercrime investigations with the Mumbai Cyber Police and the Income Tax
-              Department, identifying threats, extracting critical evidence, and hardening systems against
-              vulnerability.
-            </p>
-            <br />
-            <p tabindex="0">
-              This unique dual-perspective—constructing robust software architecture and deconstructing it for security
-              flaws—allows me to deliver incredibly resilient, high-performance applications while remaining fiercely
-              committed to innovation in India’s digital ecosystem.
-            </p>
+              <label
+                for="switchforsetting"
+                class="needtobeinvert"
+                id="labelforsetting"
+                tabindex="0"
+                aria-label="settings for sound and appearance"
+              ></label>
 
-
-            <!-- Resume button -->
-            <button class="resume-btn" id="resume-btn" onclick="openURL()">
-              <div class="sign">
-                <svg viewBox="0 0 640 512">
-                  <path
-                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-                </svg>
+              <div
+                class="visualmodetogglebuttoncontainer"
+                id="visualmodetogglebuttoncontainer"
+              >
+                <input
+                  type="checkbox"
+                  id="switchforvisualmode"
+                  onclick="visualmode()"
+                />
+                <label
+                  for="switchforvisualmode"
+                  id="labelforvisualmode"
+                  tabindex="0"
+                  aria-label="switch appearance"
+                ></label>
               </div>
 
-              <div class="text">Resume</div>
-            </button>
+              <div
+                class="soundtogglebuttoncontainer"
+                id="soundtogglebuttoncontainer"
+              >
+                <input
+                  type="checkbox"
+                  id="switchforsound"
+                  onclick="playpause()"
+                />
+                <label
+                  for="switchforsound"
+                  id="labelforsound"
+                  tabindex="0"
+                  aria-label="switch sound"
+                  class="needtobeinvert"
+                ></label>
+              </div>
+            </div>
+            <!-- setting div ends -->
+          </div>
+          <!-- contact-btn-div -->
+        </div>
+      </section>
+      <!-- landing page ends here -->
+      <section class="about-section-container" id="about" data-aos="fade-up">
+        <div class="about-section">
+          <div class="section-heading">
+            <h2
+              class="section-heading-article"
+              tabindex="0"
+              aria-label="About me heading"
+            >
+              &#60;/AboutMe&#62;
+            </h2>
+            <p class="sectionHeadingP"></p>
           </div>
 
-          <div class="dp" data-aos="fade-up">
-            <img src="src/webp/sanny.webp" alt="Sanny Prajapati" tabindex="0" aria-label="image of Sanny Prajapati" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends  -->
+          <div class="info-dp-section">
+            <div class="about-info">
+              <p tabindex="0">
+                I'm Sanny Prajapati, a multifaceted developer and security
+                expert. As a
+                <strong>Full Stack, App, and Desktop App Developer</strong>, I
+                build scalable web platforms, engaging mobile experiences, and
+                powerful native tools. Simultaneously, as a
+                <strong>Cyber Security and Digital Forensics Expert</strong>, I
+                have contributed to cybercrime investigations with the Mumbai
+                Cyber Police and the Income Tax Department, identifying threats,
+                extracting critical evidence, and hardening systems against
+                vulnerability.
+              </p>
+              <br />
+              <p tabindex="0">
+                This unique dual-perspective—constructing robust software
+                architecture and deconstructing it for security flaws—allows me
+                to deliver incredibly resilient, high-performance applications
+                while remaining fiercely committed to innovation in India’s
+                digital ecosystem.
+              </p>
 
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
+              <!-- Resume button -->
+              <button class="resume-btn" id="resume-btn" onclick="openURL()">
+                <div class="sign">
+                  <svg viewBox="0 0 640 512">
+                    <path
+                      d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+                    />
+                  </svg>
+                </div>
 
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0" aria-label="Core Versatile Stack">
-            Core Technologies
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <!-- Cyber Security & Forensics -->
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/portswigger.png" alt="Burp Suite skill" class="tech-stack-logo" />
-              <span class="tooltip">BURP SUITE</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/wireshark.png" alt="Wireshark skill" class="tech-stack-logo" />
-              <span class="tooltip">WIRESHARK</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kali/kali-original.svg"
-                alt="Kali Linux skill" class="tech-stack-logo" />
-              <span class="tooltip">KALI LINUX</span>
-            </li>
-
-            <!-- Full Stack -->
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"
-                class="tech-stack-logo" />
-              <span class="tooltip">REACT</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                alt="Node.js" class="tech-stack-logo" />
-              <span class="tooltip">NODE.JS</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                alt="MongoDB" class="tech-stack-logo" />
-              <span class="tooltip">MONGODB</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/svg/python.svg" alt="Python skill" class="tech-stack-logo" />
-              <span class="tooltip">PYTHON</span>
-            </li>
-
-            <!-- App & Desktop -->
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
-                alt="Flutter" class="tech-stack-logo" />
-              <span class="tooltip">FLUTTER</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg"
-                alt="Electron" class="tech-stack-logo" />
-              <span class="tooltip">ELECTRON</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-                alt="C++" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
-            </li>
-          </ul>
-
-          <div style="width: 100%; display: flex; justify-content: center; margin-top: 50px;" data-aos="fade-up">
-            <a href="tech-stack.html" tabindex="-1">
-              <button class="letsTalkBtn" style="width: 250px;">
-                <p class="letsTalkBtn-text">View All Tech Stack</p>
-                <span class="letsTalkBtn-BG"></span>
+                <div class="text">Resume</div>
               </button>
-            </a>
+            </div>
+
+            <div class="dp" data-aos="fade-up">
+              <img
+                src="src/webp/sanny.webp"
+                alt="Sanny Prajapati"
+                tabindex="0"
+                aria-label="image of Sanny Prajapati"
+              />
+            </div>
           </div>
         </div>
+      </section>
+      <!-- about section ends  -->
+
+      <section class="skills-section-container" id="skills">
+        <div class="skills-section">
+          <div class="section-heading" data-aos="fade-up">
+            <h2
+              class="section-heading-article"
+              tabindex="0"
+              aria-label="skills heading"
+            >
+              &#60;/Skills&#62;
+            </h2>
+            <p class="sectionHeadingP"></p>
+          </div>
+
+          <div class="frontend-dev-section">
+            <h3
+              class="frontend-dev-heading"
+              data-aos="fade-up"
+              tabindex="0"
+              aria-label="Core Versatile Stack"
+            >
+              Core Technologies
+            </h3>
+            <ul class="tech-stack-wrapper">
+              <!-- Cyber Security & Forensics -->
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="src/png/portswigger.png"
+                  alt="Burp Suite skill"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">BURP SUITE</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="src/png/wireshark.png"
+                  alt="Wireshark skill"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">WIRESHARK</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kalilinux/kalilinux-original.svg"
+                  alt="Kali Linux skill"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">KALI LINUX</span>
+              </li>
+
+              <!-- Full Stack -->
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="React"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">REACT</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">NODE.JS</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">MONGODB</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="src/svg/python.svg"
+                  alt="Python skill"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">PYTHON</span>
+              </li>
+
+              <!-- App & Desktop -->
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                  alt="Flutter"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">FLUTTER</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg"
+                  alt="Electron"
+                  class="tech-stack-logo"
+                />
+                <span class="tooltip">ELECTRON</span>
+              </li>
+            </ul>
+
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+              "
+              data-aos="fade-up"
+            >
+              <a href="tech-stack.html" tabindex="-1">
+                <button class="letsTalkBtn" style="width: 250px">
+                  <p class="letsTalkBtn-text">View All Tech Stack</p>
+                  <span class="letsTalkBtn-BG"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section-container" id="projects">
+        <div class="projects-section-div">
+          <div class="section-heading" data-aos="fade-up">
+            <h2
+              class="section-heading-article"
+              tabindex="0"
+              aria-label="My projects starts from here"
+            >
+              &#60;/Projects&#62;
+            </h2>
+            <p class="sectionHeadingP"></p>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <img
+                  src="src/png/profile.png"
+                  alt="Professional Link website favicon"
+                  class="faviconforProject"
+                />
+                <article class="ProjectHeading">
+                  Cybersecurity Simulation
+                </article>
+                <p class="ProjectDescription">
+                  Tackled advanced CTF challenges on platforms like TryHackMe,
+                  HackerOne, picoCTF, and PortSwigger.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="linkCard.html"
+                    target="_blank"
+                    class="cta"
+                    aria-label="Visit Professional Link live"
+                  >
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img
+                  src="src/png/csSimulation.png"
+                  alt="Professional Link website preview image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img
+                  src="src/png/rudrastra.png"
+                  alt="Rudrastra Intelligence"
+                  class="faviconforProjectAquaregia"
+                />
+                <article class="ProjectHeading">Rudrastra Intelligence</article>
+                <p class="ProjectDescription">
+                  Rudrastra is dedicated to providing cutting-edge tools and
+                  resources for digital forensics investigations and cyber crime
+                  investigation.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://rudrastra.in"
+                    target="_blank"
+                    class="github-redirect"
+                    aria-label="Visit Aquaregia on website"
+                  >
+                    <img
+                      src="src/svg/rudrastra.svg"
+                      alt="website redirect button"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/rudrastraweb.png" alt="Tool preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <img
+                  src="src/png/portswigger.png"
+                  alt="PortSwigger website favicon"
+                  class="faviconforProject"
+                />
+                <article class="ProjectHeading">
+                  PortSwigger Labs Completion
+                </article>
+                <p class="ProjectDescription">
+                  Completed all labs on PortSwigger, gaining in-depth practical
+                  knowledge in web application security testing. Developed
+                  comprehensive PoC for vulnerabilities identified during the
+                  lab exercises, demonstrating proficiency in detecting and
+                  addressing web application security flaws.
+                </p>
+              </div>
+              <div class="image-div">
+                <img
+                  src="src/png/portswiggerDashboard.png"
+                  alt="PortSwigger Dashboard preview image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box3" id="project-box3">
+              <div class="info-div">
+                <img
+                  src="src/ico/netflixfavicon.ico"
+                  alt="netflix website favicon"
+                  class="faviconforProject"
+                />
+                <article class="ProjectHeading">Netflix Clone</article>
+                <p class="ProjectDescription">
+                  A webpage to categorize the shows to redirect user to watch
+                  the show.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="github-redirect"
+                    aria-label="Visit Netflix clone on GitHub"
+                  >
+                    <img
+                      src="src/svg/github.svg"
+                      alt="github redirect button"
+                    />
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="cta"
+                    aria-label="Visit netflix clone live"
+                  >
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img
+                  src="src/webp/NetflixCloneProject.webp"
+                  alt="netflix clone website preview image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box1" id="project-box1">
+              <div class="info-div">
+                <img
+                  src="src/webp/amazon.webp"
+                  alt="Amazon website favicon"
+                  class="faviconforProject"
+                />
+                <article class="ProjectHeading">Amazon Clone</article>
+                <p class="ProjectDescription">
+                  #Amazon-Inspired Web Mockup This project is a web-based mockup
+                  inspired by the design and layout of Amazon. It's developed
+                  using HTML and CSS, showcasing design and layout techniques
+                  for educational purposes.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="github-redirect"
+                    aria-label="Visit axocean on GitHub"
+                  >
+                    <img
+                      src="src/svg/github.svg"
+                      alt="github redirect button"
+                    />
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="cta"
+                    aria-label="Visit axocean live"
+                  >
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img
+                  src="src/png/amazonpreview.png"
+                  alt="Axocean website preview image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+        </div>
+
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+          "
+          data-aos="fade-up"
+        >
+          <a href="projects.html" tabindex="-1" style="text-decoration: none">
+            <button class="letsTalkBtn" style="width: 280px; font-size: 1.2rem">
+              <p class="letsTalkBtn-text">View All Projects -></p>
+              <span class="letsTalkBtn-BG"></span>
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- main ends here -->
+
+    <!-- Contact & Map Section -->
+    <section
+      class="contact-section"
+      id="contact"
+      style="
+        width: 100%;
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 40px;
+        background: rgba(10, 10, 15, 0.7);
+        border: 1px solid rgba(0, 242, 254, 0.2);
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 242, 254, 0.05);
+        backdrop-filter: blur(10px);
+      "
+      data-aos="fade-up"
+    >
+      <div
+        class="section-heading"
+        style="text-align: center; margin-bottom: 40px"
+      >
+        <h2
+          class="section-heading-article"
+          style="
+            font-family: &quot;Orbitron&quot;, sans-serif;
+            color: #00f2fe;
+            text-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
+          "
+        >
+          &#60;/Contact_Terminal&#62;
+        </h2>
       </div>
-    </section>
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
 
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box5" id="project-box5">
-            <div class="info-div">
-              <img src="src/png/profile.png" alt="Professional Link website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">Cybersecurity Simulation</article>
-              <p class="ProjectDescription">
-                Tackled advanced CTF challenges on platforms like TryHackMe, HackerOne, picoCTF, and PortSwigger.
-              </p>
-              <div class="project-buttons">
-                <a href="linkCard.html" target="_blank" class="cta" aria-label="Visit Professional Link live">
-                  <span>Live view</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/png/csSimulation.png" alt="Professional Link website preview image" />
-            </div>
-          </div>
-        </div>
-
-        <!-- ---------------------- -->
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box2" id="project-box2">
-            <div class="info-div">
-              <img src="src/png/rudrastra.png" alt="Rudrastra Intelligence" class="faviconforProjectAquaregia" />
-              <article class="ProjectHeading">Rudrastra Intelligence</article>
-              <p class="ProjectDescription">
-                Rudrastra is dedicated to providing cutting-edge tools and resources for digital forensics
-                investigations and cyber crime investigation.
-              </p>
-              <div class="project-buttons">
-                <a href="https://rudrastra.in" target="_blank" class="github-redirect"
-                  aria-label="Visit Aquaregia on website">
-                  <img src="src/svg/rudrastra.svg" alt="website redirect button" />
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/png/rudrastraweb.png" alt="Tool preview image" />
-            </div>
-          </div>
-        </div>
-        <!-- ---------------------- -->
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box4" id="project-box4">
-            <div class="info-div">
-              <img src="src/png/portswigger.png" alt="PortSwigger website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">PortSwigger Labs Completion</article>
-              <p class="ProjectDescription">
-                Completed all labs on PortSwigger, gaining in-depth practical knowledge in web application security
-                testing. Developed comprehensive PoC for vulnerabilities identified during the lab exercises,
-                demonstrating proficiency in detecting and addressing web application security flaws.
-              </p>
-            </div>
-            <div class="image-div">
-              <img src="src/png/portswiggerDashboard.png" alt="PortSwigger Dashboard preview image" />
-            </div>
-          </div>
-        </div>
-
-        <!-- ---------------------- -->
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box3" id="project-box3">
-            <div class="info-div">
-              <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">Netflix Clone</article>
-              <p class="ProjectDescription">
-                A webpage to categorize the shows to redirect user to watch the show.
-              </p>
-              <div class="project-buttons">
-                <a href="" target="_blank" class="github-redirect" aria-label="Visit Netflix clone on GitHub">
-                  <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="" target="_blank" class="cta" aria-label="Visit netflix clone live">
-                  <span>Live view</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
-            </div>
-          </div>
-        </div>
-
-        <!-- ---------------------- -->
-
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box1" id="project-box1">
-            <div class="info-div">
-              <img src="src/webp/amazon.webp" alt="Amazon website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">Amazon Clone</article>
-              <p class="ProjectDescription">
-                #Amazon-Inspired Web Mockup This project is a web-based mockup inspired by the design and layout of
-                Amazon. It's developed using HTML and CSS, showcasing design and layout techniques for educational
-                purposes.
-              </p>
-              <div class="project-buttons">
-                <a href="" target="_blank" class="github-redirect" aria-label="Visit axocean on GitHub">
-                  <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="" target="_blank" class="cta" aria-label="Visit axocean live">
-                  <span>Live view</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/png/amazonpreview.png" alt="Axocean website preview image" />
-            </div>
-          </div>
-        </div>
-        <!-- ---------------------- -->
-      </div>
-
-      <div style="width: 100%; display: flex; justify-content: center; margin-top: 50px; margin-bottom: 20px;"
-        data-aos="fade-up">
-        <a href="projects.html" tabindex="-1" style="text-decoration: none;">
-          <button class="letsTalkBtn" style="width: 280px; font-size: 1.2rem;">
-            <p class="letsTalkBtn-text">View All Projects -></p>
-            <span class="letsTalkBtn-BG"></span>
-          </button>
-        </a>
-      </div>
-
-    </section>
-  </main>
-  <!-- main ends here -->
-
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
-            "Learning, Living, and Leveling Up."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>GetinTouch();</article>
-          </div>
-          <div class="logos">
-            <a href="https://www.linkedin.com/in/sanny-prajapati-1012392a8" target="_blank" aria-label="My Linkdin"><svg
-                class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/darkuser21" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a>
-
-            <a href="mailto:sunnyprajapati2144@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-sanny.png" alt="animation-head" class="footer-avatar-img"
-            id="footer-wala-avatar" />
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
-            </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
+      <div
+        class="contact-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          justify-content: space-between;
+        "
+      >
+        <!-- Map Container -->
+        <div
+          class="map-container"
+          style="
+            flex: 1;
+            min-width: 300px;
+            height: 450px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+          "
+        >
+          <div id="map" style="width: 100%; height: 100%; z-index: 1"></div>
+          <!-- Scanning Overlay Effect -->
           <div
-            style="display: flex; gap: 20px; justify-content: center; margin-bottom: 15px; font-family: 'Fira Code', monospace; font-size: 1.2rem;">
-            <a href="privacy-policy.html" style="color: var(--color-gray); text-decoration: none;">Privacy Policy</a>
-            <a href="https://github.com/sponsors/darkuser21" target="_blank"
-              style="color: var(--color-gray); text-decoration: none;">Support Me</a>
-          </div>
-          <article>
-            Design & Built by Sanny Prajapati
-            &#169; 2026 | Built for darkuser.tech
-          </article>
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(
+                135deg,
+                rgba(0, 242, 254, 0.1) 0%,
+                transparent 50%,
+                rgba(255, 81, 47, 0.05) 100%
+              );
+              pointer-events: none;
+              mix-blend-mode: overlay;
+              z-index: 2;
+            "
+          ></div>
+        </div>
+
+        <!-- Contact Form -->
+        <div
+          class="form-container"
+          style="
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        >
+          <form
+            id="globalContactForm"
+            style="display: flex; flex-direction: column; gap: 20px"
+          >
+            <div class="form-group" style="position: relative">
+              <label
+                style="
+                  color: #00f2fe;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 0.85rem;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-bottom: 5px;
+                  display: block;
+                "
+                >Identifier Name</label
+              >
+              <input
+                type="text"
+                id="contactName"
+                required
+                style="
+                  width: 100%;
+                  padding: 15px;
+                  background: rgba(0, 0, 0, 0.6);
+                  border: 1px solid rgba(0, 242, 254, 0.2);
+                  color: #fff;
+                  border-radius: 4px;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 1rem;
+                  box-sizing: border-box;
+                  transition: 0.3s;
+                "
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form-group" style="position: relative">
+              <label
+                style="
+                  color: #00f2fe;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 0.85rem;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-bottom: 5px;
+                  display: block;
+                "
+                >Comm Link (Email)</label
+              >
+              <input
+                type="email"
+                id="contactEmail"
+                required
+                style="
+                  width: 100%;
+                  padding: 15px;
+                  background: rgba(0, 0, 0, 0.6);
+                  border: 1px solid rgba(0, 242, 254, 0.2);
+                  color: #fff;
+                  border-radius: 4px;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 1rem;
+                  box-sizing: border-box;
+                  transition: 0.3s;
+                "
+                placeholder="john@domain.com"
+              />
+            </div>
+            <div class="form-group" style="position: relative">
+              <label
+                style="
+                  color: #00f2fe;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 0.85rem;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-bottom: 5px;
+                  display: block;
+                "
+                >Contact Node (Phone)</label
+              >
+              <input
+                type="tel"
+                id="contactPhone"
+                required
+                style="
+                  width: 100%;
+                  padding: 15px;
+                  background: rgba(0, 0, 0, 0.6);
+                  border: 1px solid rgba(0, 242, 254, 0.2);
+                  color: #fff;
+                  border-radius: 4px;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 1rem;
+                  box-sizing: border-box;
+                  transition: 0.3s;
+                "
+                placeholder="+1 234 567 8900"
+              />
+            </div>
+            <div class="form-group" style="position: relative">
+              <label
+                style="
+                  color: #00f2fe;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 0.85rem;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-bottom: 5px;
+                  display: block;
+                "
+                >Encrypted Payload (Message)</label
+              >
+              <textarea
+                id="contactMessage"
+                required
+                rows="4"
+                style="
+                  width: 100%;
+                  padding: 15px;
+                  background: rgba(0, 0, 0, 0.6);
+                  border: 1px solid rgba(0, 242, 254, 0.2);
+                  color: #fff;
+                  border-radius: 4px;
+                  font-family: &quot;Fira Code&quot;, monospace;
+                  font-size: 1rem;
+                  box-sizing: border-box;
+                  transition: 0.3s;
+                  resize: vertical;
+                "
+                placeholder="Enter transmission data..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              id="contactSubmitBtn"
+              style="
+                width: 100%;
+                padding: 18px;
+                border: none;
+                cursor: pointer;
+                margin-top: 5px;
+                background: linear-gradient(90deg, #00f2fe, #4facfe);
+                color: #000;
+                font-weight: 900;
+                letter-spacing: 2px;
+                font-family: &quot;Orbitron&quot;, sans-serif;
+                font-size: 1.2rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+                box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+                transition: 0.3s;
+              "
+            >
+              Transmit Request
+            </button>
+            <div
+              id="contactStatus"
+              style="
+                margin-top: 15px;
+                text-align: center;
+                font-family: &quot;Fira Code&quot;, monospace;
+                font-size: 0.95rem;
+                font-weight: bold;
+              "
+            ></div>
+          </form>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer ends here -->
+    </section>
 
-  <script src="main.js"></script>
-  <script src="professional-image-parallax.js"></script>
+    <footer id="footer">
+      <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+        <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+      </button>
+      <div class="footer-background">
+        <div class="footer-blob"></div>
+      </div>
+      <div class="footer-foreground">
+        <div class="footercontainer">
+          <div class="two-words">
+            <article
+              tabindex="0"
+              aria-label="Learning, Living, and Leveling Up, my quote"
+            >
+              "Learning, Living, and Leveling Up."
+            </article>
+          </div>
+          <div class="social-media-container">
+            <div class="getintouch-heading">
+              <article>GetinTouch();</article>
+            </div>
+            <div class="logos">
+              <a
+                href="https://www.linkedin.com/in/sanny-prajapati-1012392a8"
+                target="_blank"
+                aria-label="My Linkdin"
+                ><svg class="SocialHandle" viewBox="0 0 448 512">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  /></svg
+              ></a>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+              <a
+                href="https://github.com/darkuser21"
+                target="_blank"
+                aria-label="My github"
+                ><svg viewBox="0 0 496 512" class="SocialHandle">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  /></svg
+              ></a>
 
-  <script>
-    function openURL() {
-      var url = "src/pdf/Sanny Prajapati - Cyber Security & Digital Forensics - Resume.pdf";
+              <a
+                href="mailto:sunnyprajapati2144@gmail.com"
+                target="_blank"
+                aria-label="My G mail"
+                ><svg id="GmailLogo" viewBox="0 0 512 512">
+                  <path
+                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer-avatar-container">
+            <img
+              src="src/png/footer-avatar-sanny.png"
+              alt="animation-head"
+              class="footer-avatar-img"
+              id="footer-wala-avatar"
+            />
+            <div class="footer-avatar-face">
+              <div class="footer-avatar-eye footer-left-eye">
+                <div class="footer-pupil"></div>
+              </div>
+              <div class="footer-avatar-eye footer-right-eye">
+                <div class="footer-pupil"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div
+              style="
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                margin-bottom: 15px;
+                font-family: &quot;Fira Code&quot;, monospace;
+                font-size: 1.2rem;
+                flex-wrap: wrap;
+              "
+            >
+              <a
+                href="privacy-policy.html"
+                style="color: var(--color-gray); text-decoration: none"
+                >Privacy Policy</a
+              >
+              <a
+                href="ai-profile.html"
+                style="color: var(--color-gray); text-decoration: none"
+                >AI Profile</a
+              >
+              <a
+                href="wiki-data.html"
+                style="color: var(--color-gray); text-decoration: none"
+                >Wiki Data</a
+              >
+              <a
+                href="linkCard.html"
+                style="color: var(--color-gray); text-decoration: none"
+                >Link Tree</a
+              >
+              <a
+                href="https://github.com/sponsors/darkuser21"
+                target="_blank"
+                style="color: var(--color-gray); text-decoration: none"
+                >Support Me</a
+              >
+            </div>
+            <article>
+              Design & Built by Sanny Prajapati &#169; 2026 | Built for
+              darkuser.tech
+            </article>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
 
-      window.open(url, "_blank");
-    }
-  </script>
+    <script src="main.js"></script>
+    <script src="professional-image-parallax.js"></script>
 
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
+    <script>
+      function openURL() {
+        var url =
+          "src/pdf/Sanny Prajapati - Cyber Security & Digital Forensics - Resume.pdf";
 
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
+        window.open(url, "_blank");
+      }
+    </script>
 
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
+    <script>
+      const cursorInner = document.getElementById("cursor-inner");
+      const cursorOuter = document.getElementById("cursor-outer");
+      const links = document.querySelectorAll("a,label,button");
 
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
+      document.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
 
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
+        cursorInner.style.left = `${posX}px`;
+        cursorInner.style.top = `${posY}px`;
+
+        // cursorOuter.style.left = `${posX}px`;
+        // cursorOuter.style.top = `${posY}px`;
+
+        cursorOuter.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" },
+        );
+
+        links.forEach((link) => {
+          link.addEventListener("mouseenter", () => {
+            cursorInner.classList.add("hover");
+            cursorOuter.classList.add("hover");
+          });
+          link.addEventListener("mouseleave", () => {
+            cursorInner.classList.remove("hover");
+            cursorOuter.classList.remove("hover");
+          });
         });
       });
-    });
-  </script>
-  <script
-    type="text/javascript">!function (t, e) { t.artibotApi = { l: [], t: [], on: function () { this.l.push(arguments) }, trigger: function () { this.t.push(arguments) } }; var a = !1, i = e.createElement("script"); i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload = function () { if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) { new window.ArtiBot({ i: "309c9e93-f3de-482c-b05d-c873dd796ac8" }); a = !0 } } }(window, document);</script>
-</body>
+    </script>
+    <script type="text/javascript">
+      !(function (t, e) {
+        t.artibotApi = {
+          l: [],
+          t: [],
+          on: function () {
+            this.l.push(arguments);
+          },
+          trigger: function () {
+            this.t.push(arguments);
+          },
+        };
+        var a = !1,
+          i = e.createElement("script");
+        ((i.async = !0),
+          (i.type = "text/javascript"),
+          (i.src = "https://app.artibot.ai/loader.js"),
+          e.getElementsByTagName("head").item(0).appendChild(i),
+          (i.onreadystatechange = i.onload =
+            function () {
+              if (
+                !(
+                  a ||
+                  (this.readyState &&
+                    "loaded" != this.readyState &&
+                    "complete" != this.readyState)
+                )
+              ) {
+                new window.ArtiBot({
+                  i: "309c9e93-f3de-482c-b05d-c873dd796ac8",
+                });
+                a = !0;
+              }
+            }));
+      })(window, document);
+    </script>
 
+    <!-- Contact Map & Form Initialization -->
+    <script>
+      // Initialize Leaflet Map
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mumbai Coordinates
+        var map = L.map("map").setView([19.076, 72.8777], 12);
+
+        // Dark theme map tiles (CartoDB Dark Matter)
+        L.tileLayer(
+          "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+          {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: "abcd",
+            maxZoom: 20,
+          },
+        ).addTo(map);
+
+        // Custom Cyber Marker
+        var cyberIcon = L.divIcon({
+          className: "custom-div-icon",
+          html: "<div style='background-color:#00f2fe; width:15px; height:15px; border-radius:50%; box-shadow: 0 0 15px 5px rgba(0,242,254,0.6); border: 2px solid #fff;'></div>",
+          iconSize: [15, 15],
+          iconAnchor: [7, 7],
+        });
+
+        L.marker([19.076, 72.8777], { icon: cyberIcon })
+          .addTo(map)
+          .bindPopup(
+            "<b style='color:#000; font-family:Orbitron;'>Origin Node: Mumbai</b><br>Sanny Prajapati HQ.",
+          )
+          .openPopup();
+      });
+
+      // Handle Contact Form Submission
+      document
+        .getElementById("globalContactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const submitBtn = document.getElementById("contactSubmitBtn");
+          const statusDiv = document.getElementById("contactStatus");
+
+          submitBtn.innerText = "Transmitting...";
+          submitBtn.style.opacity = "0.7";
+          submitBtn.disabled = true;
+
+          const formData = {
+            name: document.getElementById("contactName").value,
+            email: document.getElementById("contactEmail").value,
+            number: document.getElementById("contactPhone").value,
+            message: document.getElementById("contactMessage").value,
+            service: "General Inquiry (Landing Page)", // Fallback for the backend
+          };
+
+          try {
+            const response = await fetch("http://localhost:3000/send-inquiry", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+              statusDiv.innerHTML =
+                "<span style='color: #00ff00;'>Transmission Successful. Awaiting Response.</span>";
+              document.getElementById("globalContactForm").reset();
+            } else {
+              statusDiv.innerHTML = `<span style='color: #ff3333;'>Transmission Failed: ${result.error || "Unknown Error"}</span>`;
+            }
+          } catch (error) {
+            console.error("Network Error:", error);
+            statusDiv.innerHTML =
+              "<span style='color: #ff3333;'>Transmission Failed: Comm Link Offline (Server Down).</span>";
+          } finally {
+            submitBtn.innerText = "Transmit Request";
+            submitBtn.style.opacity = "1";
+            submitBtn.disabled = false;
+          }
+        });
+    </script>
+  </body>
 </html>

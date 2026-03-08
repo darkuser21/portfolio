@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Sanny Prajapati",
+    "jobTitle": "Cyber Security & Digital Forensics | Full Stack Developer",
+    "description": "A versatile technologist operating at the intersection of security and engineering. Expertise spans Cyber Security & Digital Forensics, Full Stack Web Platforms, and Cross-Platform Mobile & Desktop Applications.",
+    "url": "https://darkuser.tech/",
+    "image": "https://darkuser.tech/src/png/Preview-card-min.png",
+    "email": "sunnyprajapati2144@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/darkuser21",
+      "https://www.linkedin.com/in/sanny-prajapati-1012392a8"
+    ],
+    "knowsAbout": [
+      "Cyber Security",
+      "Digital Forensics",
+      "Full Stack Development",
+      "App Development",
+      "Desktop App Development",
+      "Vulnerability Assessment",
+      "React",
+      "Node.js",
+      "Flutter",
+      "Electron",
+      "Python",
+      "C++",
+      "Ethical Hacking",
+      "VAPT"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Rudrastra Intelligence",
+      "url": "https://rudrastra.in"
+    }
+  }
+}

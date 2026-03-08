@@ -1,22 +1,54 @@
 User-agent: *
 Allow: /
+Allow: /ai-profile.html
+Allow: /wiki-data.html
+Allow: /.well-known/ai-profile.json
+Allow: /ai.txt
 
-# AI Agent Specific Directives
+# --- AI Agent & Advanced Search Directives --- #
+
+# OpenAI (ChatGPT / SearchGPT)
 User-agent: OpenAI
 Allow: /
 User-agent: OpenAI-GPT
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: CCBot
 Allow: /
 User-agent: GPTBot
 Allow: /
 User-agent: ChatGPT-User
 Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google AI & Standard
+User-agent: Google-Extended
+Allow: /
+User-agent: Googlebot
+Allow: /
+
+# Anthropic (Claude)
 User-agent: anthropic-ai
 Allow: /
 User-agent: Claude-Web
 Allow: /
 
-Sitemap: https://darkuser.tech/sitemap.xml
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+User-agent: perplexity
+Allow: /
+
+# Apple Search
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft / Bing
+User-agent: Bingbot
+Allow: /
+User-agent: amazon-Q
+Allow: /
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://darkuser.tech/sitemap-main.xml

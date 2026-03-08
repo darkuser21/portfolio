@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="Sanny Prajapati" />
+    
+
+    
+    <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .service-detail-container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 150px auto 100px auto;
+        padding: 40px;
+        background: rgba(10, 10, 15, 0.7);
+        border: 1px solid rgba(255, 180, 50, 0.2);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        color: #ccc;
+        font-family: "Fira Code", monospace;
+        line-height: 1.8;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .service-detail-container h1 {
+        font-family: "Orbitron", sans-serif;
+        color: #ffaa33;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 170, 51, 0.2);
+        padding-bottom: 15px;
+      }
+
+      .service-detail-container h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+
+      .service-detail-container ul {
+        margin-left: 20px;
+        list-style-type: square;
+      }
+
+      .service-detail-container li {
+        margin-bottom: 10px;
+      }
+
+      .back-btn {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: #ffaa33;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .back-btn:hover {
+        color: #fff;
+        text-shadow: 0 0 10px #ffaa33;
+      }
+
+      .navbar {
+        background: rgba(10, 10, 10, 0.9) !important;
+      }
+    </style>
+  
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+    <!-- Advanced SEO & Structured Data -->
+    <title>Full Stack Web Development | Sanny Prajapati</title>
+    <meta name="description" content="High-performance, scalable, and secure full-stack web development services. Custom web applications tailored to your business needs." />
+    <link rel="canonical" href="https://darkuser.tech/web-development.html" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Full Stack Web Development | Sanny Prajapati" />
+    <meta property="og:description" content="High-performance, scalable, and secure full-stack web development services. Custom web applications tailored to your business needs." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://darkuser.tech/web-development.html" />
+    <meta property="og:site_name" content="Sanny Prajapati Portfolio" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Portfolio" />
+    <meta name="twitter:title" content="Full Stack Web Development | Sanny Prajapati" />
+    <meta name="twitter:description" content="High-performance, scalable, and secure full-stack web development services. Custom web applications tailored to your business needs." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Full Stack Web Development",
+        "description": "High-performance, scalable, and secure full-stack web development services. Custom web applications tailored to your business needs.",
+        "provider": {
+          "@type": "Person",
+          "name": "Sanny Prajapati"
+        },
+        "serviceType": "Cybersecurity & Software Development",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Global"
+        },
+        "url": "https://darkuser.tech/web-development.html"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://darkuser.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://darkuser.tech/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Full Stack Web Development",
+            "item": "https://darkuser.tech/web-development.html"
+          }
+        ]
+      }
+    </script>
+    <!-- End Advanced SEO -->
+    
+
+  <!-- Cyber 3D Styles & Particles -->
+  <style>
+    body { background-color: #050508 !important; }
+    #tsparticles {
+      position: fixed; width: 100%; height: 100vh; top: 0; left: 0; z-index: -2;
+    }
+    .blob-service {
+      position: fixed; right: -15%; top: -10%; background-color: #00f2fe; width: 700px; height: 100vh;
+      filter: blur(250px); opacity: 0.15; animation: breath-service 6s ease-in-out infinite alternate; z-index: -1; pointer-events: none;
+    }
+    @keyframes breath-service { 0% {opacity: 0.1; transform: scale(0.9) translate(0, 0);} 100% {opacity: 0.25; transform: scale(1.1) translate(-50px, 50px);} }
+
+    /* 3D Image Container */
+    .tilt-box {
+      border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,242,254,0.15);
+      position: relative; margin: 40px 0 50px 0; border: 1px solid rgba(0, 242, 254, 0.3);
+      background: #000;
+      width: 100%; height: auto;
+    }
+    .tilt-box img {
+      width: 100%; height: 400px; object-fit: cover; display: block; filter: brightness(0.85) contrast(1.1) saturate(1.2);
+    }
+    .tilt-box::after {
+        content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(135deg, rgba(0,242,254,0.2) 0%, transparent 50%, rgba(255,81,47,0.1) 100%); pointer-events: none; mix-blend-mode: overlay;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none; position: fixed; z-index: 9999; left: 0; top: 0;
+      width: 100%; height: 100%; overflow: auto;
+      background-color: rgba(0,0,5,0.9); backdrop-filter: blur(15px);
+    }
+    .modal-content {
+      background: rgba(10, 10, 15, 0.95);
+      margin: 8% auto; padding: 40px;
+      border: 1px solid rgba(0,242,254,0.5); border-radius: 8px;
+      width: 90%; max-width: 550px; position: relative;
+      box-shadow: 0 0 40px rgba(0, 242, 254, 0.1), inset 0 0 20px rgba(0, 242, 254, 0.05);
+      animation: modalFadeIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .modal-content::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #00f2fe, #4facfe, #00f2fe);
+      background-size: 200% 100%; animation: gradientShift 3s ease infinite; border-radius: 8px 8px 0 0;
+    }
+    @keyframes gradientShift { 0% {background-position: 100% 0;} 100% {background-position: -100% 0;} }
+    @keyframes modalFadeIn {
+      from {opacity: 0; transform: scale(0.8) translateY(30px);}
+      to {opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .close-btn { color: #555; float: right; font-size: 32px; font-weight: bold; cursor: pointer; transition: 0.3s; line-height: 20px; text-shadow: none; }
+    .close-btn:hover { color: #ff512f; text-shadow: 0 0 15px #ff512f; transform: scale(1.1); }
+    
+    .form-group { margin-bottom: 25px; position: relative; }
+    .form-group label { display: block; margin-bottom: 8px; color: #00f2fe; font-family: 'Fira Code', monospace; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;}
+    .form-input {
+      width: 100%; padding: 15px;
+      background: rgba(0,0,0,0.6); border: 1px solid rgba(0,242,254,0.2);
+      color: #fff; border-radius: 4px; font-family: 'Fira Code', monospace; font-size: 1rem;
+      transition: all 0.3s ease; box-sizing: border-box;
+    }
+    .form-input::placeholder { color: rgba(255,255,255,0.2); }
+    .form-input:focus { outline: none; border-color: #00f2fe; box-shadow: 0 0 20px rgba(0,242,254,0.2), inset 0 0 10px rgba(0,242,254,0.1); background: rgba(0,242,254,0.05); }
+    
+    .submit-btn {
+      width: 100%; padding: 18px; border: none; cursor: pointer; margin-top: 15px;
+      background: linear-gradient(90deg, #00f2fe, #4facfe); color: #000; font-weight: 900; letter-spacing: 2px;
+      font-family: 'Orbitron', sans-serif; font-size: 1.2rem; border-radius: 4px;
+      transition: all 0.3s ease; box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); text-transform: uppercase;
+      position: relative; overflow: hidden;
+    }
+    .submit-btn::before {
+      content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transform: skewX(-25deg); transition: 0.5s;
+    }
+    .submit-btn:hover::before { left: 150%; }
+    .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 242, 254, 0.6); color: #fff; text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+    
+    .form-status { margin-top: 20px; text-align: center; font-family: 'Fira Code', monospace; font-size: 0.95rem; text-shadow: 0 0 10px currentColor; font-weight: bold; }
+    
+    /* Cyber frame styling for images */
+    .cyber-frame {
+      position: absolute; pointer-events: none; width: 30px; height: 30px; border: 2px solid #00f2fe; z-index: 10;
+    }
+    .cf-tl { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+    .cf-tr { top: 15px; right: 15px; border-left: none; border-bottom: none; }
+    .cf-bl { bottom: 15px; left: 15px; border-right: none; border-top: none; }
+    .cf-br { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+
+    /* Mobile Responsive Queries */
+    @media (max-width: 768px) {
+      .modal-content {
+        margin: 15% auto;
+        padding: 25px 20px;
+        width: 95%;
+      }
+      .modal-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+      }
+      .submit-btn {
+        padding: 15px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+      .tilt-box img {
+        height: 250px;
+      }
+      .blob-service {
+        width: 100%;
+        right: 0;
+      }
+      .close-btn {
+        font-size: 28px;
+        line-height: 15px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-input {
+        padding: 12px;
+      }
+    }
+  </style>
+
+</head>
+<body class="body">
+    <header>
+      <div class="navbar" id="navbar">
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none">
+            <div class="logo-top">
+              <img
+                src="src/png/nav-avatar.png"
+                alt="Sanny Prajapati"
+                id="nav-avatar"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li class="home"><a href="index.html">&#60;/Home&#62;</a></li>
+            <li class="skills activeThistab">
+              <a href="services.html">&#60;/Services&#62;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+    <div class="blob-service"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <section class="service-detail-container" data-aos="fade-up">
+        <a href="services.html" class="back-btn">&#8592; Back to Services</a>
+
+        <h1>&#60;Full Stack Web Development /&#62;</h1>
+        <div class="tilt-box" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Full Stack Web Development" style="width: 100%; height: 350px; object-fit: cover; display: block; filter: brightness(0.8) contrast(1.2);">
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+
+        <p>
+          Building beautiful interfaces is only half the battle. True
+          <strong>Web Development</strong> requires scalable databases, secure
+          API layers, and blazing fast frontend rendering designed for the
+          modern user.
+        </p>
+
+        <h2>Technical Expertise:</h2>
+        <ul>
+          <li>
+            <strong>Frontend Frameworks:</strong> React.js, Next.js, and vanilla
+            HTML/CSS solutions designed around responsive behaviors, web
+            accessibility (a11y), and 3D web graphics (WebGL).
+          </li>
+          <li>
+            <strong>Backend Architecture:</strong> Node.js, Express, Python
+            (Django/FastAPI) built to handle heavy concurrent traffic, load
+            balancing, and complex business logic.
+          </li>
+          <li>
+            <strong>Database Engineering:</strong> Structuring resilient storage
+            models using PostgreSQL, MySQL, and NoSQL databases like MongoDB.
+            Integrating caching mechanisms (Redis) for millisecond data queries.
+          </li>
+          <li>
+            <strong>Security-First Approach:</strong> Because my foundation is
+            in Cybersecurity, all web deployments are hardened by design.
+            Anti-DDoS layers, HTTPS enforcement, CORS configuration, and secure
+            header implementations are standard.
+          </li>
+        </ul>
+
+        <h2>The Outcome:</h2>
+        <p>
+          From dynamic E-commerce platforms to high-end Cyber portfolios and
+          internal dashboards, the deliverable is a high-availability
+          application ready to scale seamlessly.
+        </p>
+
+        <div style="margin-top: 50px; text-align: center">
+          <div style="position: relative; z-index: 100; margin-top: 20px;">
+            <button type="button" class="letsTalkBtn inq-btn" data-service="Full Stack Web Development" style="border: none; cursor: pointer; background: transparent; padding: 0;">
+          <div class="letsTalkBtn-text" style="color: #00f2fe; text-shadow: 0 0 10px rgba(0,242,254,0.5); font-family: 'Orbitron', sans-serif; font-weight: bold; letter-spacing: 1px; z-index: 10; position: relative; padding: 15px 30px;">Inquire About Service</div>
+          <span class="letsTalkBtn-BG" style="background: rgba(0,242,254,0.1); border: 1px solid #00f2fe; border-radius: 5px;"></span>
+        </button></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 3D Particles Container -->
+  <div id="tsparticles"></div>
+
+  <!-- Inquiry Modal -->
+  <div id="inquiryModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 style="font-family: 'Orbitron', sans-serif; color: #fff; margin-bottom: 35px; text-shadow: 0 0 10px #00f2fe; letter-spacing: 2px;">
+        Service Inquiry
+      </h2>
+      
+      <form id="inquiryForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="inqName" class="form-input" placeholder="Enter your full name..." required />
+        </div>
+        <div class="form-group">
+          <label>Contact Number</label>
+          <input type="tel" id="inqNumber" class="form-input" placeholder="Enter your phone number..." required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="inqEmail" class="form-input" placeholder="Enter your email address..." required />
+        </div>
+        <div class="form-group">
+          <label>Service of Interest</label>
+          <input type="text" id="inqService" class="form-input" style="color: #fff; font-weight: bold; background: rgba(0,242,254,0.1); border-color: #00f2fe; text-shadow: 0 0 5px rgba(0,242,254,0.8);" readonly />
+        </div>
+        <div class="form-group">
+          <label>Message / Details</label>
+          <textarea id="inqMessage" class="form-input" placeholder="Explain your requirements here..." rows="4" style="resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="inqSubmitBtn">Submit Inquiry</button>
+      </form>
+      <div id="inqStatus" class="form-status"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <!-- tsParticles Library -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-triangles@2.11.0/tsparticles.preset.triangles.bundle.min.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Initialize 3D Particles
+      try {
+        tsParticles.load("tsparticles", {
+          preset: "triangles",
+          particles: {
+            number: { value: 60, density: { enable: true, value_area: 800 } },
+            color: { value: ["#00f2fe", "#4facfe"] },
+            links: { enable: true, color: "#00f2fe", opacity: 0.2, distance: 150 },
+            move: { enable: true, speed: 1.5, direction: "none", random: false, straight: false, outModes: "out" },
+            size: { value: 2 },
+            opacity: { value: 0.4, animation: { enable: true, speed: 1, minimumValue: 0.1 } }
+          },
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "grab" },
+              onClick: { enable: true, mode: "push" }
+            },
+            modes: { grab: { distance: 140, links: { opacity: 0.8 } }, push: { quantity: 4 } }
+          },
+          background: { color: "transparent" }
+        });
+      } catch(err) { console.error("tsParticles failed to load:", err); }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 3D Tilt initialization for non-mobile devices
+      try {
+        if(window.innerWidth > 768) {
+          VanillaTilt.init(document.querySelectorAll(".tilt-box"), {
+            max: 6,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.25,
+            scale: 1.03
+          });
+        }
+      } catch(e) {}
+
+      // Modal Script
+      const modal = document.getElementById("inquiryModal");
+      const closeBtn = document.querySelector(".close-btn");
+      const inqService = document.getElementById("inqService");
+      const inqBtns = document.querySelectorAll(".inq-btn");
+
+      inqBtns.forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const serviceName = btn.getAttribute("data-service");
+          inqService.value = serviceName;
+          modal.style.display = "block";
+        });
+      });
+
+      closeBtn.onclick = () => { modal.style.display = "none"; document.getElementById("inqStatus").innerText = ""; }
+      window.onclick = (e) => { if (e.target == modal) { modal.style.display = "none"; document.getElementById("inqStatus").innerText = ""; } }
+
+      document.getElementById("inquiryForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const status = document.getElementById("inqStatus");
+        const submitBtn = document.getElementById("inqSubmitBtn");
+        
+        status.style.color = "#00f2fe";
+        status.innerText = "Submitting request...";
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Processing...";
+        
+        const data = {
+          name: document.getElementById("inqName").value,
+          number: document.getElementById("inqNumber").value,
+          email: document.getElementById("inqEmail").value,
+          service: document.getElementById("inqService").value,
+          message: document.getElementById("inqMessage").value
+        };
+        
+        try {
+          const res = await fetch("http://localhost:3000/send-inquiry", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+          });
+          
+          if(res.ok) {
+            status.style.color = "#38ef7d";
+            status.innerText = "Success! Your inquiry has been submitted and a confirmation email has been sent.";
+            document.getElementById("inquiryForm").reset();
+            setTimeout(() => {
+                modal.style.display = "none";
+                status.innerText = "";
+            }, 3000);
+          } else {
+            status.style.color = "#ff512f";
+            status.innerText = "Error: Our server failed to process the request.";
+          }
+        } catch (err) {
+          status.style.color = "#ff512f";
+          status.innerText = "Fatal Error: Ensure the Node.js backend is running on port 3000.";
+        }
+        
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Submit Inquiry";
+      });
+    });
+  </script>
+
+</body>
+</html>
