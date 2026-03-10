@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000" />
+    <meta name="author" content="Sanny Prajapati" />
+    <meta
+      name="description"
+      content="Learn more about Sanny Prajapati, a multifaceted Cyber Security Expert, Digital Forensics Investigator, and Full Stack Developer based in Mumbai."
+    />
+
+    <!-- Geotags & Canonical -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Mumbai" />
+    <meta name="geo.position" content="19.0760;72.8777" />
+    <meta name="ICBM" content="19.0760, 72.8777" />
+    <link rel="canonical" href="https://darkuser.tech/about.html" />
+    <meta name="msvalidate.01" content="BING_VERIFICATION_PLACEHOLDER" />
+
+    <title>About Me | Sanny Prajapati</title>
+    <link rel="icon" type="image/jpg" href="src/png/main-favicon-sanny.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps"
+    />
+    <style>
+        :root {
+            --cyber-cyan: #00f2fe;
+            --cyber-magenta: #ff00ff;
+            --cyber-orange: #ff512f;
+            --grid-color: rgba(0, 242, 254, 0.1);
+        }
+
+        .about-page-container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Scanlines Overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Cyber Grid Background */
+        .cyber-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: center bottom;
+            perspective: 500px;
+            transform-style: preserve-3d;
+            z-index: -1;
+            animation: grid-move 20s linear infinite;
+        }
+        @keyframes grid-move {
+            from { background-position: 0 0; }
+            to { background-position: 0 50px; }
+        }
+        .cyber-grid::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, transparent, var(--color-dark-mode) 80%);
+        }
+
+        .about-content-wrapper {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+        .about-text {
+            flex: 2;
+        }
+        .about-visual {
+            flex: 1;
+            position: sticky;
+            top: 150px;
+        }
+        .about-text p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ffffff;
+            text-align: justify;
+            font-family: 'Fira Code', monospace;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-left: 2px solid var(--cyber-cyan);
+            backdrop-filter: blur(8px);
+            border-radius: 0 10px 10px 0;
+        }
+        .about-visual img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 195, 255, 0.3);
+            border: 1px solid rgba(0, 195, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .about-visual img:hover {
+            animation: glitch-img 0.3s infinite;
+        }
+
+        /* Timeline Styles */
+        .timeline-container {
+            margin-top: 100px;
+            position: relative;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--cyber-cyan), var(--cyber-magenta), transparent);
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+        .timeline-content {
+            width: 80%;
+            padding: 25px;
+            background: rgba(10, 10, 15, 0.85);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            border-radius: 12px;
+            position: relative;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .timeline-content p {
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+            font-family: 'Fira Code', monospace;
+        }
+        .timeline-content:hover {
+            border-color: var(--cyber-cyan);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+            transform: translateY(-5px);
+        }
+        .timeline-dot {
+            position: absolute;
+            right: -6px;
+            top: 30px;
+            width: 12px;
+            height: 12px;
+            background: var(--cyber-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--cyber-cyan);
+        }
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -6px;
+            right: auto;
+            background: var(--cyber-magenta);
+            box-shadow: 0 0 10px var(--cyber-magenta);
+        }
+        .timeline-date {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .timeline-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        /* Technical Arsenal Styles */
+        .technical-arsenal {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .arsenal-category {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 242, 254, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        .arsenal-category::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyber-cyan), transparent);
+        }
+        .category-title {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .skill-bar-container {
+            margin-bottom: 15px;
+        }
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--cyber-cyan), #00d2ff);
+            box-shadow: 0 0 10px var(--cyber-cyan);
+            width: 0;
+            transition: width 1.5s cubic-bezier(0.1, 0, 0.2, 1);
+        }
+
+        /* Mission Briefing Styles */
+        .mission-briefing {
+            margin-top: 100px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(20, 20, 20, 0.9));
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            position: relative;
+        }
+        .mission-briefing h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-orange);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .mission-content {
+            font-family: 'Fira Code', monospace;
+            color: #ffffff;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .mission-content p {
+            margin-bottom: 20px;
+        }
+
+        /* Terminal Log Styles */
+        .terminal-log-container {
+            margin-top: 80px;
+            background: #050505;
+            border: 1px solid #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Fira Code', monospace;
+        }
+        .terminal-header {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 10px;
+        }
+        .terminal-dot-red { width: 10px; height: 10px; background: #ff5f56; border-radius: 50%; }
+        .terminal-dot-yellow { width: 10px; height: 10px; background: #ffbd2e; border-radius: 50%; }
+        .terminal-dot-green { width: 10px; height: 10px; background: #27c93f; border-radius: 50%; }
+        
+        .log-feed {
+            color: #4ade80;
+            font-size: 0.85rem;
+            animation: scroll-logs 10s linear infinite;
+        }
+        .log-line {
+            margin-bottom: 5px;
+            opacity: 0.8;
+        }
+        @keyframes scroll-logs {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+
+        /* Standardized Strong Tag */
+        strong {
+            color: var(--cyber-cyan);
+            font-weight: 700;
+            text-shadow: 0 0 5px rgba(0, 242, 254, 0.3);
+        }
+
+        .letsTalkBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          border: 1px solid #00f2fe;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+          z-index: 1;
+        }
+        .letsTalkBtn-text {
+          color: #00f2fe;
+          font-family: 'Orbitron', sans-serif;
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin: 0;
+          z-index: 2;
+        }
+        .letsTalkBtn-BG {
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.2), transparent);
+          transition: all 0.5s ease;
+          z-index: 1;
+        }
+        .letsTalkBtn:hover .letsTalkBtn-BG {
+          left: 100%;
+        }
+        .letsTalkBtn:hover {
+          box-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
+          transform: translateY(-2px);
+        }
+    </style>
+  </head>
+
+  <body class="body">
+    <noscript>Allow Javascript</noscript>
+
+    <header>
+      <div class="cursor-inner" id="cursor-inner"></div>
+      <div class="cursor-outer" id="cursor-outer"></div>
+
+      <div class="navbar" id="navbar">
+        <div class="logo" tabindex="0" aria-label="Sanny Prajapati logo">
+          <a href="index.html" style="text-decoration: none">
+            <div class="logo-top">
+              <img
+                src="src/png/nav-avatar.png"
+                alt="Sanny Prajapati"
+                id="nav-avatar"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li class="navbar-tabs-li home">
+              <a href="index.html" tabindex="0" aria-label="Home menu button">
+                &#60;/Home&#62;
+              </a>
+            </li>
+            <li class="navbar-tabs-li about activeThistab">
+              <a href="about.html">&#60;/AboutMe&#62;</a>
+            </li>
+            <li class="navbar-tabs-li gallery">
+              <a href="gallery.html">&#60;/Gallery&#62;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cyber-grid"></div>
+      <section class="about-page-container">
+        <div class="live-indicator" style="position: absolute; top: 100px; right: 20px; font-family: 'Orbitron', sans-serif; color: #ff0000; font-size: 0.8rem; display: flex; align-items: center; gap: 10px;">
+            <span style="width: 8px; height: 8px; background: #ff0000; border-radius: 50%; box-shadow: 0 0 10px #ff0000; animation: blink 1s infinite;"></span>
+            LIVE SYSTEM DATA
+        </div>
+        <style>@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }</style>
+
+        <div class="section-heading" data-aos="fade-up">
+          <h1 class="section-heading-article glitch-text" tabindex="0" aria-label="About Sanny Prajapati" data-text="&#60;AboutMe /&#62;">
+            &#60;AboutMe /&#62;
+          </h1>
+          <p class="sectionHeadingP" style="width: 150px"></p>
+        </div>
+
+        <div class="about-content-wrapper">
+            <div class="about-text" data-aos="fade-right">
+                <p>
+                    I'm <strong>Sanny Prajapati</strong>, a multifaceted developer and security expert dedicated to constructing robust digital foundations and defending them against evolving threats.
+                </p>
+                <p>
+                    As a <strong>Full Stack, App, and Desktop App Developer</strong>, I specialize in building scalable web platforms, engaging mobile experiences, and powerful native tools. My development philosophy centers on resilience, high performance, and user-centric design.
+                </p>
+                <p>
+                    Simultaneously, I serve as a <strong>Cyber Security and Digital Forensics Expert</strong>. I have had the privilege of contributing to high-stakes cybercrime investigations alongside the <strong>Mumbai Cyber Police</strong> and the <strong>Income Tax Department</strong>. My work in this field involves identifying sophisticated threats, extracting critical digital evidence, and hardening systems against vulnerabilities.
+                </p>
+                
+                <div class="system-stats" data-aos="fade-up">
+                    <div class="stat-box">
+                        <span class="stat-label">Core Status</span>
+                        <span class="stat-value">Operational</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Security Clearance</span>
+                        <span class="stat-value">Level 5 (Elite)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Threat Detection</span>
+                        <span class="stat-value">99.9% Accuracy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual" data-aos="fade-left">
+                <img src="src/webp/sanny.webp" alt="Sanny Prajapati" />
+            </div>
+        </div>
+
+        <!-- Mission Briefing Section -->
+        <div class="mission-briefing" data-aos="fade-up">
+            <h2>&#62; Mission Briefing</h2>
+            <div class="mission-content">
+                <p>My mission is to facilitate a safer digital future by bridging the critical gap between software innovation and defensive integrity. In an era of escalating cyber-warfare, I believe that <strong>Security is not a feature—it is the foundation.</strong></p>
+                <p>I operate on a dual-cycle methodology: <strong>Building</strong> complex, high-performance architectures while simultaneously <strong>Deconstructing</strong> them to expose hidden vectors. This recursive approach ensures that every deployment is "battle-hardened" before it ever goes live.</p>
+            </div>
+        </div>
+
+        <!-- Technical Arsenal Section -->
+        <div class="technical-arsenal">
+            <div class="arsenal-category" data-aos="fade-right">
+                <div class="category-title">
+                    <i class="fas fa-shield-alt"></i> SECURITY OPS
+                </div>
+                <div class="skill-meter">
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>VAPT / Red Teaming</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Exploit Research</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Incident Response</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arsenal-category" data-aos="fade-left">
+                <div class="category-title">
+                    <i class="fas fa-code"></i> ENGINEERING
+                </div>
+                <div class="skill-meter">
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Full Stack (MERN)</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>App Development</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Security Tool Dev</span><span>94%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 94%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Timeline -->
+        <div class="timeline-container">
+            <div class="section-heading" data-aos="fade-up" style="margin-bottom: 50px;">
+                <h1 class="section-heading-article glitch-text" style="font-size: 2.5rem;" data-text="&#60;Data Timeline /&#62;">&#60;Data Timeline /&#62;</h1>
+            </div>
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">PHASE 01: ORIGIN [SYSTEM INITIALIZATION]</span>
+                    <h3 class="timeline-title">The Foundation</h3>
+                    <p>Started the journey into the digital realm, mastering low-level programming (C/C++) and core web architectures. A period of intense learning and building early frameworks for scalable applications. 
+                        <strong>Key Milestones:</strong> Mastering MERN Stack, Understanding Network Protocols, Early desktop automation tools.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">PHASE 02: DEPLOYMENT [FIELD OPERATIONS]</span>
+                    <h3 class="timeline-title">Cyber Intelligence</h3>
+                    <p>Collaborated with the <strong>Mumbai Cyber Police</strong> and <strong>Income Tax Department</strong> on critical investigations. Focused on forensic extraction, data recovery under pressure, and neutralizing complex threats. 
+                        <strong>Key Milestones:</strong> Leading high-stakes forensic audits, Neutralizing ransomware variants, Government-level consultancy.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">PHASE 03: ASCENSION [SECURITY REFINEMENT]</span>
+                    <h3 class="timeline-title">Security Architecture</h3>
+                    <p>Specialized in <strong>Red Teaming</strong> and <strong>Vulnerability Assessment & Penetration Testing (VAPT)</strong>. Developed private security toolkits and refined the art of building "Unbreakable" digital ecosystems. 
+                        <strong>Key Milestones:</strong> Advanced OSINT methodologies, 0-day vulnerability research, Custom security hardware integration.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">PRESENT STATE: BRIDGING [OPTIMAL PERFORMANCE]</span>
+                    <h3 class="timeline-title">Full Cycle Engineering</h3>
+                    <p>Currently leading high-end projects that require both advanced development and heavy-duty security measures. Defining the standard for secure engineering by ensuring every line of code is defensively sound.
+                        <strong>Current Focus:</strong> AI-driven threat mitigation, Multi-platform secure environments, Elite level security training.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terminal Log Scrolling Section -->
+        <div class="terminal-log-container" data-aos="fade-up">
+            <div class="terminal-header">
+                <div class="terminal-dot-red"></div>
+                <div class="terminal-dot-yellow"></div>
+                <div class="terminal-dot-green"></div>
+                <span style="color: #666; font-size: 0.8rem; margin-left: 10px;">SANNY_PRAJAPATI@SYSTEM_FEED: ~</span>
+            </div>
+            <div class="log-feed">
+                <div class="log-line">[OK] Initializing security protocols...</div>
+                <div class="log-line">[OK] Loading core competencies: Security, Forensics, Development</div>
+                <div class="log-line">[INFO] Intelligence link established with Mumbai Cyber Police</div>
+                <div class="log-line">[INFO] Scanning for vulnerabilities... No breaches detected</div>
+                <div class="log-line">[OK] High-fidelity data rendering active</div>
+                <div class="log-line">[OK] Status: Elite Level 5 Clearance Verified</div>
+                <div class="log-line">[INFO] Monitoring network traffic for 0-day threats</div>
+                <div class="log-line">[OK] Breach Probability: 0.0001% (Optimal)</div>
+                <div class="log-line">[INFO] Syncing mission objectives... Secure India's Digital Hub</div>
+                <div class="log-line">[OK] System operating at 100% capacity</div>
+                <!-- Duplicate for loop -->
+                <div class="log-line">[OK] Initializing security protocols...</div>
+                <div class="log-line">[OK] Loading core competencies: Security, Forensics, Development</div>
+                <div class="log-line">[INFO] Intelligence link established with Mumbai Cyber Police</div>
+                <div class="log-line">[INFO] Scanning for vulnerabilities... No breaches detected</div>
+                <div class="log-line">[OK] High-fidelity data rendering active</div>
+                <div class="log-line">[OK] Status: Elite Level 5 Clearance Verified</div>
+            </div>
+        </div>
+
+        <div class="cta-container" style="margin: 100px 0; text-align: center;">
+            <div class="section-heading" data-aos="fade-up">
+                <h1 class="section-heading-article" style="font-size: 2rem;">&#60;Mission Ready? /&#62;</h1>
+            </div>
+            <a href="index.html#contact" style="text-decoration: none; display: inline-block; margin-top: 30px;">
+                <button class="letsTalkBtn" style="padding: 15px 40px;">
+                  <p class="letsTalkBtn-text" style="font-size: 1.3rem;">INITIALIZE CONTACT</p>
+                  <span class="letsTalkBtn-BG"></span>
+                </button>
+            </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      
+      // Skill bars animation on scroll
+      window.addEventListener('scroll', () => {
+          const arsenal = document.querySelector('.technical-arsenal');
+          if (arsenal && arsenal.getBoundingClientRect().top < window.innerHeight) {
+              document.querySelectorAll('.skill-progress').forEach(bar => {
+                  bar.style.width = bar.parentElement.previousElementSibling.lastElementChild.innerText;
+              });
+          }
+      });
+
+      // Custom cursor
+      const cursorInner = document.getElementById("cursor-inner");
+      const cursorOuter = document.getElementById("cursor-outer");
+      const links = document.querySelectorAll("a,label,button");
+
+      document.addEventListener("mousemove", function (e) {
+        if (!cursorInner || !cursorOuter) return;
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorInner.style.left = `${posX}px`;
+        cursorInner.style.top = `${posY}px`;
+
+        cursorOuter.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" },
+        );
+
+        links.forEach((link) => {
+          link.addEventListener("mouseenter", () => {
+            cursorInner.classList.add("hover");
+            cursorOuter.classList.add("hover");
+          });
+          link.addEventListener("mouseleave", () => {
+            cursorInner.classList.remove("hover");
+            cursorOuter.classList.remove("hover");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
