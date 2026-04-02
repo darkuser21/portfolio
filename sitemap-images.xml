@@ -1,38 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Home Page Images -->
     <url>
         <loc>https://darkuser.tech/</loc>
         <image:image>
             <image:loc>https://darkuser.tech/src/png/Preview-card-min.png</image:loc>
             <image:title>Sanny Prajapati Portfolio Preview</image:title>
+            <image:caption>Sanny Prajapati | Versatile Software &amp; Security Expert Portfolio</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://darkuser.tech/src/webp/sanny.webp</image:loc>
-            <image:title>Sanny Prajapati</image:title>
+            <image:title>Sanny Prajapati Profile Photo</image:title>
+            <image:caption>Sanny Prajapati - Cybersecurity Expert and Developer</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/nav-avatar.png</image:loc>
+            <image:title>Sanny Prajapati Logo</image:title>
         </image:image>
     </url>
+
+    <!-- Projects Page Images -->
+    <url>
+        <loc>https://darkuser.tech/projects.html</loc>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/csSimulation.png</image:loc>
+            <image:title>Cybersecurity Simulation Project</image:title>
+            <image:caption>Interactive Cybersecurity and VAPT Simulation Demo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/rudrastraweb.png</image:loc>
+            <image:title>Rudrastra Intelligence Dashboard</image:title>
+            <image:caption>OSINT and Digital Forensics Dashboard Preview</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/portswiggerDashboard.png</image:loc>
+            <image:title>PortSwigger Web Security Labs</image:title>
+            <image:caption>Enterprise Vulnerability Assessment Metrics</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/amazonpreview.png</image:loc>
+            <image:title>E-commerce Application Preview</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/Shear%20Brilliance%20Testing%20Preview.png</image:loc>
+            <image:title>Shear Brilliance Security Audit Preview</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://darkuser.tech/src/png/assesstool.png</image:loc>
+            <image:title>Vulnerability Assessment Tool</image:title>
+        </image:image>
+    </url>
+
+    <!-- Gallery Page Images -->
     <url>
         <loc>https://darkuser.tech/gallery.html</loc>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701549_121.jpg</image:loc><image:title>Sanny Prajapati Profile Photo</image:title><image:caption>Sanny Prajapati Cyber Security Expert</image:caption></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701558_121.jpg</image:loc><image:title>Sanny Prajapati Cyber</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701577_121.jpg</image:loc><image:title>Sanny Prajapati Cyber Security Expert</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20241223-WA0022.jpg</image:loc><image:title>Sanny Prajapati Digital Forensics</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20241223-WA0028.jpg</image:loc><image:title>Sanny Prajapati Ethical Hacker</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250213-WA0020.jpg</image:loc><image:title>Sanny Prajapati Tech Setup</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250213-WA0024.jpg</image:loc><image:title>Sanny Prajapati Cyber Analysis</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250504-WA0005.jpg</image:loc><image:title>Sanny Prajapati Mumbai Cyber Security</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250504-WA0006.jpg</image:loc><image:title>Sanny Prajapati Digital Forensics Case</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20251213-WA0095.jpg</image:loc><image:title>Sanny Prajapati Hacker</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0014.jpg</image:loc><image:title>Sanny Prajapati Cyber Security Expert Event</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0015.jpg</image:loc><image:title>Sanny Prajapati Rudrastra Intelligence</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0018.jpg</image:loc><image:title>Sanny Prajapati Indian Ethical Hacker</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG_20251106_200024_969.jpg</image:loc><image:title>Sanny Prajapati Workshop</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG_20251106_200028_935.jpg</image:loc><image:title>Sanny Prajapati Presentation</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260120-134230~4.png</image:loc><image:title>Sanny Prajapati VAPT Report</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260127-165112~2.png</image:loc><image:title>Sanny Prajapati Code Snapshot</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-115646.png</image:loc><image:title>Sanny Prajapati Development Profile</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-115652.png</image:loc><image:title>Sanny Prajapati Security Tools</image:title></image:image>
-        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-153656.png</image:loc><image:title>Sanny Prajapati Darkuser Project</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701549_121.jpg</image:loc><image:title>Sanny Prajapati Achievement</image:title><image:caption>Sanny Prajapati receiving recognition for Cyber Security work</image:caption></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701558_121.jpg</image:loc><image:title>Sanny Prajapati Cybersecurity Milestone</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/-6327640193690701577_121.jpg</image:loc><image:title>Sanny Prajapati Technical Operations</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20241223-WA0022.jpg</image:loc><image:title>Digital Forensics Lab View</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20241223-WA0028.jpg</image:loc><image:title>Ethical Hacker Desktop Setup</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250213-WA0020.jpg</image:loc><image:title>Sanny Prajapati On-site Security Audit</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250213-WA0024.jpg</image:loc><image:title>Darkuser Cybersecurity Simulation</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250504-WA0005.jpg</image:loc><image:title>Sanny Prajapati Cyber Forensic Investigator</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20250504-WA0006.jpg</image:loc><image:title>Evidence Extraction Process Gallery</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20251213-WA0095.jpg</image:loc><image:title>Professional Hacking Environment</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20251213-WA0104.jpg</image:loc><image:title>Cyber Crime Investigation Milestone</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20251213-WA0109.jpg</image:loc><image:title>Sanny Prajapati Field Observation</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0014.jpg</image:loc><image:title>Sanny Prajapati Technical Seminar</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0015.jpg</image:loc><image:title>Forensic Tech Demonstration</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG-20260119-WA0018.jpg</image:loc><image:title>Sanny Prajapati Networking Event</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG_20251106_200024_969.jpg</image:loc><image:title>Cyber Security Awareness Program</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/IMG_20251106_200028_935.jpg</image:loc><image:title>Technical Workshop Presentation</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260120-134230~4.png</image:loc><image:title>Security Tool Logic Screenshot</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260127-165112~2.png</image:loc><image:title>Development Workflow Snapshot</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-115646.png</image:loc><image:title>Application UI Architecture</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-115652.png</image:loc><image:title>Advanced Pentesting Tools Suite</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/web%20pics/Screenshot_20260206-153656.png</image:loc><image:title>Digital Intelligence Profile Dashboard</image:title></image:image>
     </url>
+
+    <!-- Services and Skills Log Icons -->
+    <url>
+        <loc>https://darkuser.tech/services.html</loc>
+        <image:image><image:loc>https://darkuser.tech/src/png/nmap.png</image:loc><image:title>Nmap Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/metasploit.png</image:loc><image:title>Metasploit Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/wireshark.png</image:loc><image:title>Wireshark Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/nessus.png</image:loc><image:title>Nessus Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/maltego.png</image:loc><image:title>Maltego Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/owaspzap.png</image:loc><image:title>OWASP ZAP Icon</image:title></image:image>
+        <image:image><image:loc>https://darkuser.tech/src/png/sqlmap.png</image:loc><image:title>sqlmap Icon</image:title></image:image>
+    </url>
+
 </urlset>

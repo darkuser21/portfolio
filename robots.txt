@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /web pics/
+Allow: /src/png/
+Allow: /src/webp/
 Allow: /ai-profile.html
 Allow: /wiki-data.html
 Allow: /.well-known/ai-profile.json
@@ -23,6 +26,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
 Allow: /
 
 # Anthropic (Claude)
@@ -51,4 +56,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# --- Sitemaps --- #
+Sitemap: https://darkuser.tech/sitemap.xml
 Sitemap: https://darkuser.tech/sitemap-main.xml
+Sitemap: https://darkuser.tech/sitemap-images.xml

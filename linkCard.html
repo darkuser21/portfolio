@@ -449,6 +449,34 @@
       .platform-card[data-platform="picoctf"] .platform-logo {
         background: #1a1a1a;
       }
+      /* Bio Card Styles */
+      .professional-bio-card {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .professional-bio-card h2 {
+        color: var(--primary);
+        font-size: 1.2em;
+        margin-bottom: 12px;
+        font-family: 'Orbitron', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .professional-bio-card p {
+        color: var(--text-color);
+        opacity: 0.85;
+        line-height: 1.6;
+        font-size: 0.95em;
+      }
+      .platform-card p {
+        color: #ccc;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 5px;
+      }
     </style>
   </head>
 
@@ -495,6 +523,17 @@
       </div>
 
       <div class="links-section">
+        <div class="professional-bio-card">
+          <h2>Professional Summary</h2>
+          <p>
+            A dedicated Cybersecurity professional and Software Engineer with expertise in 
+            <strong>Vulnerability Assessment & Penetration Testing (VAPT)</strong> and <strong>Digital Forensics</strong>. 
+            I bridge the gap between secure architecture and native software performance, crafting 
+            robust full-stack web platforms and cross-platform desktop applications. 
+            Below are my professional profiles and technical certifications across various global testing platforms.
+          </p>
+        </div>
+
         <div class="links-grid">
           <a
             href="https://tryhackme.com/r/p/darkuser21"
@@ -510,6 +549,7 @@
               class="platform-logo"
             />
             <span class="platform-name">TryHackMe</span>
+            <p>Advanced Cybersecurity Scenarios & CTF Lab Completion</p>
           </a>
 
           <a
@@ -526,6 +566,7 @@
               class="platform-logo"
             />
             <span class="platform-name">HackerOne</span>
+            <p>Professional Bug Bounty Hunting & Vulnerability Disclosure</p>
           </a>
 
           <a
@@ -542,6 +583,7 @@
               class="platform-logo"
             />
             <span class="platform-name">PortSwigger</span>
+            <p>Web Security Academy Hall of Fame & Enterprise Vulnerability Research</p>
           </a>
 
           <a
@@ -558,6 +600,7 @@
               class="platform-logo"
             />
             <span class="platform-name">picoCTF</span>
+            <p>Competitive Capture The Flag (CTF) Participant & Problem Solver</p>
           </a>
         </div>
       </div>
